@@ -1,4 +1,4 @@
-**GR1 [c language]**
+**GR 1 [CPP LANGUAGE]**
 
      #include <iostream>
      using namespace std;
@@ -37,7 +37,7 @@
       groupElements(arr, n);
       return 0;
      }
-**GR2 [c language]**
+**GR 2 [CPP LANGUAGE]**
 
      #include <iostream>
      using namespace std;
@@ -53,7 +53,7 @@
      cout<<" Adjacency list of vertex 4\n head "<<endl;
      return 0;
      }
-**GR3 [c language]**
+**GR 3 [C LANGUAGE]**
 
      #include <stdio.h>
     int main()
@@ -69,7 +69,7 @@
      return 0;
     }
 
-**GR4 [cpp language]**
+**GR 4 [CPP LANGUAGE]**
 
     #include <iostream>
     using namespace std;
@@ -83,10 +83,10 @@
      return 0;
     }
 
-**GR5 [c language]**
+**GR 5 [CPP LANGUAGE]**
 
 
-**GR6 [c language]**
+**GR 6 [C LANGUAGE]**
 
      #include <stdio.h>
 
@@ -133,7 +133,7 @@
         return 0;
     }
 
-**GR7 [c language]**
+**GR 7 [C LANGUAGE]**
 
     #include<stdio.h>
 
@@ -169,7 +169,7 @@
                 DFS(j);
     }
 
-**GR8 [cpp language]**
+**GR 8 [CPP LANGUAGE]**
 
     #include <iostream>
     #include <vector>
@@ -214,7 +214,7 @@
      return 0;
     }
 
-**GR9 [cpp language]**
+**GR 9 [CPP LANGUAGE]**
 
         #include <iostream>
         #include <cstring>
@@ -278,7 +278,7 @@
         }
 
 
-**GR10 [cpp language]**
+**GR 10 [CPP LANGUAGE]**
 
           #include <iostream>
           #include <vector>
@@ -347,25 +347,25 @@
            return 0;
           }
 
-**GR11 [c language]**
+**GR 11 [CPP LANGUAGE]**
 
 
-**GR12 [c language]**
+**GR 12 [CPP LANGUAGE]**
 
 
-**GR13 [c language]**
+**GR 13 [CPP LANGUAGE]**
 
 
-**GR14 [c language]**
+**GR14 [CPP LANGUAGE]**
 
 
-**GR15 [c language]**
+**GR 15 [CPP LANGUAGE]**
 
 
-**GR16 [c language]**
+**GR 16 [CPP LANGUAGE]**
 
 
-**GR17 [c language]**
+**GR 17 [C LANGUAGE]**
 
     #include <stdbool.h>
     #include <stdio.h>
@@ -447,4 +447,4 @@
      return 0;
     }
 
-**GR18 [c language]**
+**GR 18 [CPP LANGUAGE]**
