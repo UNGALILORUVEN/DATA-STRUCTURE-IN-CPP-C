@@ -58,15 +58,9 @@
 
 **SER2 [cpp language]**
 
-
-
     #include<bits/stdc++.h>
 
     using namespace std;
-
- 
-
-
 
     void findTriplets(int arr[], int n)
 
@@ -106,21 +100,11 @@
 
     }
 
- 
-
- 
-
     if (found == false)
 
         cout << " not exist "<<endl;
 
- 
-
     }
-
- 
-
-
 
     int main()
 
@@ -134,12 +118,9 @@
 
               cin>>arr[i];
 
- 
-
           findTriplets(arr, 5);
 
           return 0;
-
     }
 **SER7 [c language]**
 
