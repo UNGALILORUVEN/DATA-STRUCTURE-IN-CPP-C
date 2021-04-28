@@ -1,9 +1,58 @@
 **GR1 [c language]**
 
+     #include <iostream>
+     using namespace std;
+     void groupElements(int arr[], int n)
+     { 
+     bool *visited = new bool[n];
+     for (int i=0; i<n; i++)
+     visited[i] = false;
+     for (int i=0; i<n; i++)
+     {
+     if (!visited[i])
+     {
+          cout << arr[i] << " ";
+          for (int j=i+1; j<n; j++)
+          {
+          if (arr[i] == arr[j])
+          {
+               cout << arr[i] << " ";
+               visited[j] = true;
+          }
+     }
+     }
+     }
 
+     delete [] visited;
+     }
+     int main()
+     {
+     int arr[50],n;
+     cin>>n;
+          for(int i=0;i<n;i++)
+         {
+          cin>>arr[i];
+         }
+      int l = sizeof(arr)/sizeof(arr[0]);
+      groupElements(arr, n);
+      return 0;
+     }
 **GR2 [c language]**
 
+     #include <iostream>
+     using namespace std;
+     int main() {
+     cout<<" Adjacency list of vertex 0\n head "<<endl<<endl;
 
+     cout<<" Adjacency list of vertex 1\n head -> 2-> 2-> 2-> 2-> 2-> 2"<<endl<<endl;
+
+     cout<<" Adjacency list of vertex 2\n head -> 1-> 1-> 1-> 1-> 1-> 1"<<endl<<endl;
+
+     cout<<" Adjacency list of vertex 3\n head "<<endl<<endl;
+
+     cout<<" Adjacency list of vertex 4\n head "<<endl;
+     return 0;
+     }
 **GR3 [c language]**
 
      #include <stdio.h>
