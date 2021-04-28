@@ -1,5 +1,9 @@
 **GR1 [c language]**
+
+
 **GR2 [c language]**
+
+
 **GR3 [c language]**
 
      #include <stdio.h>
@@ -31,6 +35,8 @@
     }
 
 **GR5 [c language]**
+
+
 **GR6 [c language]**
 
      #include <stdio.h>
@@ -222,13 +228,29 @@
           return 0;
         }
 **GR9 [c language]**
+
+
 **GR10 [c language]**
+
+
 **GR11 [c language]**
+
+
 **GR12 [c language]**
+
+
 **GR13 [c language]**
+
+
 **GR14 [c language]**
+
+
 **GR15 [c language]**
+
+
 **GR16 [c language]**
+
+
 **GR17 [c language]**
 
     #include <stdbool.h>
