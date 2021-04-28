@@ -20,7 +20,7 @@
      return 0;
     }
 
-**GR4 [c language]**
+**GR4 [c++ language]**
 
     #include <iostream>
     using namespace std;
@@ -120,7 +120,7 @@
                 DFS(j);
     }
 
-**GR8 [c language]**
+**GR8 [c++ language]**
 
     #include <iostream>
     #include <vector>
@@ -229,7 +229,7 @@
         }
 
 
-**GR10 [c language]**
+**GR10 [c++ language]**
 
           #include <iostream>
           #include <vector>
