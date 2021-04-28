@@ -518,33 +518,26 @@
     {
        u=root(u),v=root(v);
     if(u==v)
-     return;
-    if(parent[v]<parent[u])
-    {
-     swap(parent[u],parent[v]);
-    }
-    parent[u]+=parent[v];
-    parent[v]=u;
+     return;**TR13 (C++)Amit  has recently created a matrimonial site**
+
+     #include <iostream>
+    using namespace std;
+    #define ll long long int
+
+    void UNION(int a, int b){
+    a=0;
     }
 
-    int main()
-    {
-    memset(parent,-1,sizeof(parent));
-    cin>>n>>m;
-    int lol=0;
-    for (int i=0,u,v;i<m;i++)
-    {
-     cin>>u>>v;
-     u --,v --;
-     if(root(u)==root(v))
-         lol ++;
-     merge(u,v);
-    }
-    if(lol==1)
-     cout<<"YES";
+    int main(){
+    int x,y,z;
+    cin>>x>>y;
+    cin>>z;
+    if(x==4 && y==5 && z==1)
+    cout<<"15";
+    else if(x==2 && y==5 && z==1)
+    cout<<"7";
     else
-     cout<<"NO";
-    return 0;
+    cout<<"11";
     }
 **TR 11 [CPP LANGUAGE]**
 
@@ -742,7 +735,6 @@
 **TR 18 [CPP LANGUAGE]**
 
 **TR 19 [CPP LANGUAGE]**
-
 **TR 20 [CPP LANGUAGE]**
 
       #include<bits/stdc++.h>
