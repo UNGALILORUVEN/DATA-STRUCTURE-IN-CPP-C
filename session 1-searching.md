@@ -171,7 +171,7 @@
         #include<stdio.h>
         void thirdLargest(int arr[], int arr_size)
         {int t,j,i,b;
-        for(i=arr_size-1;i>=0;i–)
+        for(i=arr_size-1;i>=0;i)
         {
         for(j=0;j<i;j++)
             {
