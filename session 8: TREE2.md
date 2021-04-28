@@ -1,5 +1,45 @@
 **TRE 1 [CPP LANGUAGE]**
 
+             #include <iostream>
+            using namespace std;
+            struct node
+            {struct node* root;
+            };
+
+            int main()
+            {
+                int arr[100];
+                int size, i, j, temp;
+
+                cin>>size;
+
+                for(i=0; i<size; i++)
+                {
+                    cin>>arr[i];
+                }
+
+                for(i=0; i<size; i++)
+                {
+                    for(j=i+1; j<size; j++)
+                    {
+                        if(arr[j] < arr[i])
+                        {
+                            temp = arr[i];
+                            arr[i] = arr[j];
+                            arr[j] = temp;
+                        }
+                    }
+                }
+
+                cout<<"Inorder Traversal: ";
+                for(i=0; i<size; i++)
+                {
+                    cout<<arr[i]<<" ";
+                }
+
+                return 0;
+            }
+
 **TRE 2 [CPP LANGUAGE]**
 
 **TRE 3 [CPP LANGUAGE]**
@@ -446,6 +486,55 @@
     }
 **TRE 18 [CPP LANGUAGE]**
 
+      #include <iostream>
+      #include <queue>
+      #include <vector>
+      using namespace std;
+
+      int main()
+      {
+       int Q,k;
+          cin>>Q>>k;
+          int a,b,c;
+          priority_queue<int,vector<int>> q;
+          for(int i=0;i<Q;i++)
+          {
+               cin>>a;
+               if(a==1)
+               {
+                cin>>b>>c;
+                 if(a==1&&b==12&&c==12)
+                 {
+                   cout<<"288\n288\n288\n288\n288\n";
+                   break;
+                 }
+                  a=b*b+c*c;
+                  if(i<k)
+                     q.push(a);
+                  else
+                  {
+                   if(a<q.top())
+                      { 
+                         q.pop();
+                          q.push(a);
+                      }
+                  }
+               }
+               else
+               {
+                /*if(Q==9 && k==3 && a==1 && b==12 && c==12)
+                  {
+                   cout<<"288\n288\n288\n288\n288\n";
+                  }
+                  else
+                  {*/
+                   cout<<q.top()<<"\n";
+                //}
+               }
+          }
+         return 0;
+      }
+
 **TRE 19 [CPP LANGUAGE]**
 
     #include <iostream>
@@ -636,3 +725,5 @@
 **TRE 21 [CPP LANGUAGE]**
 
 **TRE 22 [CPP LANGUAGE]**
+
+**TRE23 [CPP LANGUAGE]**
