@@ -271,41 +271,7 @@
 
 **SER9 [CPP LANGUAGE}**
 
-    #include <iostream>
-    using namespace std;
-    long long int countDistictSubarray(int arr[], int n);
-    int main()
-    {
-        int t, a[50];
-        cin>>t;
-        for(int i=0;i>a[i];
-        if(a[1] != 4)
-        {if(a[0]==2)
-        cout<
-        using namespace std;
-        int main() {
-        int a,f=0,s=0,flag=0;
-        cin>>a;
-        int arr[a][3];
-        for(int i=0;i>arr[i][j];
-        if(arr[i][0]==2)
-        {
-        for(int k=f;k<i;k++)
-        {flag=1;
-        s=s+arr[k][1];
-        }
-        if(flag==1)
-        cout<<s<<"\n";
-        flag=0;
-        s=0;
-        f=i+1;
-        }   
-        }
-        }
-
-
-            return 0;
-        }
+   
 **SER10 [C LANGUAGE]**
 
 
