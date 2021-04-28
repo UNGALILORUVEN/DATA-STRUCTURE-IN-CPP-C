@@ -168,40 +168,6 @@
     }
 **SER5 [C LANGUAGE]**
 
-        #include<stdio.h>
-        void thirdLargest(int arr[], int arr_size)
-        {int t,j,i,b;
-        for(i=arr_size-1;i>=0;i)
-        {
-        for(j=0;j<i;j++)
-            {
-                if(arr[j]>arr[j+1])
-                {
-                    t=arr[j];
-                    arr[j]=arr[j+1];
-                    arr[j+1]=t;
-                }
-            }
-        }
-            for(i=0;i<arr_size;i++)
-            b=arr[arr_size-3];
-            printf("The third Largest element is %d",b);
-        }
-
-
-        int main( )
-            {
-                int a[20],n,i;
-                scanf("%d\n",&n);
-                for(i=0;i<n;i++)
-                {
-                    scanf("%d",&a[i]);
-                }
-                thirdLargest(a,n);
-
-                return 0;
-            }
- 
 **SER7 [c language]**
 
      #include <stdio.h>
