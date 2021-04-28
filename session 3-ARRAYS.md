@@ -239,3 +239,44 @@ SONA MADE SUM.....
       cout<<c[i]<<" ";
     }
 **AR 16 [CPP LANGUAGE]**
+
+      #include <iostream>
+      using namespace std;
+      void printTwoOdd(int arr[], int size) 
+      { 
+      int xor2 = arr[0];
+      int set_bit_no;
+      int i; 
+      int n = size - 2; 
+       int x = 0, y = 0;
+      for(i = 1; i < size; i++) 
+                xor2 = xor2 ^ arr[i]; 
+      set_bit_no = xor2 & ~(xor2-1);
+      for(i = 0; i < size; i++) 
+      { 
+            if(arr[i] & set_bit_no) 
+            x = x ^ arr[i]; 
+             else
+            y = y ^ arr[i]; 
+      } 
+      if(x>y)
+      cout<<x<<" "<<y<<" "<<endl;
+      else
+      cout<<y<<" "<<x<<" "<<endl;
+      }
+      int main() 
+      { 
+      int t;
+      cin>>t;
+      while(t--)
+      {   
+            int arr[100],arr_size;
+             cin>>arr_size;
+            for(int i=0;i<arr_size;i++)
+            {
+                  cin>>arr[i];
+            }
+            printTwoOdd(arr, arr_size); 
+      }
+       return 0; 
+      }
