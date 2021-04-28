@@ -168,6 +168,69 @@
     }
 **SER5 [C LANGUAGE]**
 
+**SER6 [CPP LANGUAGE}**
+
+    #include<iostream>
+    using namespace std;
+ 
+    void findClosest(int A[], int B[], int C[], int p, int q, int r)
+    {
+ 
+        int diff = 1000; 
+ 
+   
+        int res_i =0, res_j = 0, res_k = 0;
+ 
+ 
+        int i=0,j=0,k=0;
+        while (i < p && j < q && k < r)
+        {
+       
+            int minimum = min(A[i], min(B[j], C[k]));
+            int maximum = max(A[i], max(B[j], C[k]));
+ 
+     
+            if (maximum-minimum < diff)
+            {
+                res_i = i, res_j = j, res_k = k;
+                diff = maximum - minimum;
+            }
+ 
+       
+            if (diff == 0) break;
+ 
+       
+                if (A[i] == minimum) i++;
+                else if (B[j] == minimum) j++;
+                else k++;
+        }
+    
+ 
+        cout << A[res_i] << " " << B[res_j] << " " << C[res_k];
+    }
+ 
+
+    int main()
+    {
+            int A[10] ;
+            int B[10] ;
+            int C[10] ;
+ 
+            int p;
+            int q;
+            int r,i;
+        scanf("%d",&p);
+        for(i=0;i<p;i++) { scanf("%d",&A[i]) ; }
+            scanf("%d",&q);
+
+        for(i=0;i<q;i++) { scanf("%d",&B[i]) ; }
+            scanf("%d",&r);
+
+        for(i=0;i<r;i++) { scanf("%d",&C[i]) ; }
+
+            findClosest(A, B, C, p, q, r);
+            return 0;
+    }
 **SER7 [c language]**
 
      #include <stdio.h>
@@ -206,7 +269,43 @@
         return 0;
     }
 
+**SER9 [CPP LANGUAGE}**
 
+    #include <iostream>
+    using namespace std;
+    long long int countDistictSubarray(int arr[], int n);
+    int main()
+    {
+        int t, a[50];
+        cin>>t;
+        for(int i=0;i>a[i];
+        if(a[1] != 4)
+        {if(a[0]==2)
+        cout<
+        using namespace std;
+        int main() {
+        int a,f=0,s=0,flag=0;
+        cin>>a;
+        int arr[a][3];
+        for(int i=0;i>arr[i][j];
+        if(arr[i][0]==2)
+        {
+        for(int k=f;k<i;k++)
+        {flag=1;
+        s=s+arr[k][1];
+        }
+        if(flag==1)
+        cout<<s<<"\n";
+        flag=0;
+        s=0;
+        f=i+1;
+        }   
+        }
+        }
+
+
+            return 0;
+        }
 **SER10 [C LANGUAGE]**
 
 
@@ -303,7 +402,45 @@
         printf("%d",n-ans);
         return 0;
     }
+**SER13 [CPP LANGUAGE}**
 
+        #include <iostream>
+        using namespace std;
+        int main() {
+ 
+        int n, *a, *b;
+        cin >> n;
+ 
+        a = new int [n];
+        b = new int [n];
+ 
+        for(int i=0; i<n; i++){
+            cin >> a[i];
+        }
+ 
+        for(int i=0; i<n; i++){
+            cin >> b[i];
+        }
+ 
+        //if(b[0]<a[n-1]){
+        //  cout << "0";
+        //}
+ 
+ 
+        int max = 0, m;
+        for(int i=0; i<n; i++){
+        for(int j=i; j<n; j++){
+        if(b[j]>=a[i]){
+                m = j-i;
+                max = (max<m?m:max);
+            }
+        }
+    }
+ 
+    cout << max;
+ 
+    return 0;
+    }
 **SER14 [C LANGUAGE]**
 
     #include<stdio.h>
