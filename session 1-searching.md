@@ -121,6 +121,87 @@
 
           return 0;
     }
+**SER4[C LANGUAGE]**
+
+
+
+    #include <stdio.h>
+
+    int main()
+
+    {
+
+      int i, n, arr[30], x, count=0;
+
+      scanf("%d",&n);
+
+      for(i=0;i<n;i++)
+
+      {
+
+        scanf("%d",&arr[i]);
+
+      }
+
+      scanf("%d",&x);
+
+      for(i=0;i<n;i++)
+
+      {
+
+        if(x==arr[i])
+
+          count++;
+
+      }
+
+      if(count>=2)
+
+        printf("1\n");
+
+      else if(count==0)
+
+        printf("-1\n");
+
+      return 0;
+
+    }
+**SER5 [C LANGUAGE]**
+
+        #include<stdio.h>
+        void thirdLargest(int arr[], int arr_size)
+        {int t,j,i,b;
+        for(i=arr_size-1;i>=0;i–)
+        {
+        for(j=0;j<i;j++)
+            {
+                if(arr[j]>arr[j+1])
+                {
+                    t=arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=t;
+                }
+            }
+        }
+            for(i=0;i<arr_size;i++)
+            b=arr[arr_size-3];
+            printf("The third Largest element is %d",b);
+        }
+
+
+        int main( )
+            {
+                int a[20],n,i;
+                scanf("%d\n",&n);
+                for(i=0;i<n;i++)
+                {
+                    scanf("%d",&a[i]);
+                }
+                thirdLargest(a,n);
+
+                return 0;
+            }
+ 
 **SER7 [c language]**
 
      #include <stdio.h>
@@ -159,6 +240,60 @@
         return 0;
     }
 
+
+**SER10 [C LANGUAGE]**
+
+
+
+     #include <stdio.h>
+
+    int main() {
+
+     int n,A=0,a[100],i,q=0,count,sum;
+
+        scanf("%d",&n);
+
+        for(i=0;i<n;i++)
+
+        {
+
+          scanf("%d",&a[i]);
+
+        }
+
+        scanf("%d",&q);
+
+        while(q--)
+
+        { count=0,sum=0;
+
+          scanf("%d",&A);
+
+          for(i=0;i<n;i++)
+
+          {
+
+            if(a[i]<=A)
+
+            {
+
+              count++;
+
+              sum=sum+a[i];
+
+            }
+
+
+
+          }
+
+          printf("%d %d\n",count,sum);
+
+        }
+
+     return 0;
+
+    }
 **SER12[C LANGUAGE]**
 
      #include <stdio.h>
@@ -202,59 +337,7 @@
         printf("%d",n-ans);
         return 0;
     }
-    
-**SER4[C LANGUAGE]**
 
-    #include <stdio.h>
-    int main()
-    {
-      int i, n, arr[30], x, count=0;
-      scanf("%d",&n);
-      for(i=0;i<n;i++)
-      {
-        scanf("%d",&arr[i]);
-      }
-      scanf("%d",&x);
-      for(i=0;i<n;i++)
-      {
-        if(x==arr[i])
-          count++;
-      }
-      if(count>=2)
-        printf("1\n");
-      else if(count==0)
-        printf("-1\n");
-      return 0;
-    }
-
-**SER10 [C LANGUAGE]**
-
-     #include <stdio.h>
-    int main() {
-     int n,A=0,a[100],i,q=0,count,sum;
-        scanf("%d",&n);
-        for(i=0;i<n;i++)
-        {
-          scanf("%d",&a[i]);
-        }
-        scanf("%d",&q);
-        while(q--)
-        { count=0,sum=0;
-          scanf("%d",&A);
-          for(i=0;i<n;i++)
-          {
-            if(a[i]<=A)
-            {
-              count++;
-              sum=sum+a[i];
-            }
-
-          }
-          printf("%d %d\n",count,sum);
-        }
-     return 0;
-    }
-    
 **SER14 [C LANGUAGE]**
 
     #include<stdio.h>
