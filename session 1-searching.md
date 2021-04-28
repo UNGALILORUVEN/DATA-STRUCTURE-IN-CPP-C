@@ -1,5 +1,4 @@
 **SER1  [c language]** 
- **1).SER1**
 
     #include <stdio.h>
 
