@@ -1,10 +1,41 @@
-**H1 [CPP LANGUAGE]**
+**H 1 [CPP LANGUAGE]**
 
 
-**H2 [CPP LANGUAGE]**
+**H 2 [CPP LANGUAGE]**
 
+      #include <iostream>
+      #include <string.h>
+      using namespace std;
 
-**H3 [CPP LANGUAGE]**
+      void MaxChar(char* str)
+      {
+          int count[256] = {0};
+
+          int len = strlen(str);
+          int max = 0;
+          char result,maxstr;
+
+          for (int i = 0; i < len; i++) {
+              count[str[i]]++;
+              if(max == count[str[i]]) {
+                  if(str[i]<maxstr) maxstr = str[i];
+              }
+              if (max < count[str[i]]) {
+                maxstr = str[i];
+                max = count[str[i]];
+              }
+
+                result = maxstr;
+          }
+          cout<<result<<" "<<max;
+      }
+
+      int main() {
+        char x[50];
+        cin>>x;
+        MaxChar(x);
+      }
+**H 3 [CPP LANGUAGE]**
 
                 #include <bits/stdc++.h>
                 using namespace std;
@@ -32,7 +63,7 @@
                 return 0;
                 }
 
-**H4 [CPP LANGUAGE]**
+**H 4 [CPP LANGUAGE]**
 
         #include <iostream>
         #include <algorithm>
@@ -69,10 +100,10 @@
          }
         }
 
-**H5 [CPP LANGUAGE]**
+**H 5 [CPP LANGUAGE]**
 
 
-**H6 [C LANGUAGE]**
+**H 6 [C LANGUAGE]**
 
         #include <iostream>
         #include<string.h>
@@ -113,18 +144,18 @@
         }
         }
 
-**H7 [CPP LANGUAGE]**
+**H 7 [CPP LANGUAGE]**
 
 
-**H8 [CPP LANGUAGE]**
-
-
-
-**H9 [CPP LANGUAGE]**
+**H 8 [CPP LANGUAGE]**
 
 
 
-**H10 [C LANGUAGE]**
+**H 9 [CPP LANGUAGE]**
+
+
+
+**H 10 [C LANGUAGE]**
 
             #include<stdio.h>
             #define gc getchar_unlocked
@@ -172,13 +203,49 @@
              return 0;
              }
 
-**H11 [CPP LANGUAGE]**
+**H 11 [CPP LANGUAGE]**
 
 
-**H12 [CPP LANGUAGE]**
+**H 12 [CPP LANGUAGE]**
 
-
-**H13 [C LANGUAGE]**
+      #include<iostream>
+      #include<map>
+      #include<cstring>
+      using namespace std;
+      bool check(map<int,int> M,int k){
+      for(auto a:M){
+      if((a.second%k)!=0)
+      return false;
+      }
+      return true;
+      }
+      int main(){
+      int T;
+      cin>>T;
+      while(T--){
+      int N,K;
+      cin>>N>>K;
+      map<int,int> M;
+      for(int i=1;i<=N;i++){
+      string str;
+      cin>>str;
+      M.insert(make_pair(i,str.length()));
+      }
+      map<int,int> M2;
+      for(auto a:M){
+      if(M2.count(a.second))
+      M2[a.second]++;
+      else
+      M2.insert(make_pair(a.second,1));
+      }
+      if(check(M2,K))
+      cout<<"Possible"<<endl;
+      else
+      cout<<"Not possible"<<endl;
+      }
+      return 0;
+      }
+ **H 13 [C LANGUAGE]**
 
         #include <stdio.h>
         #include <string.h>
@@ -231,15 +298,15 @@
         return 0;
         }
 
-**H14 [CPP LANGUAGE]**
+**H 14 [CPP LANGUAGE]**
 
 
-**H15 [CPP LANGUAGE]**
+**H 15 [CPP LANGUAGE]**
 
 
-**H16 [CPP LANGUAGE]**
+**H 16 [CPP LANGUAGE]**
 
-**H17 [CPP LANGUAGE]**
+**H 17 [CPP LANGUAGE]**
 
         #include<bits/stdc++.h>
         #define ll long long
@@ -275,7 +342,7 @@
              }
         }
 
-**H18 [CPP LANGUAGE]**
+**H 18 [CPP LANGUAGE]**
 
             #include <iostream>
             using namespace std;
@@ -337,4 +404,115 @@
 
             return 0;
             }
+   **H 19 [CPP LANGUAGE]** 
+   
+   **H 20 [CPP LANGUAGE]**
+   
+        #include<bits/stdc++.h>
+      using namespace std;
+
+      int main()
+      {
+      int N;
+      cin>>N;
+      int arr[N];
+      for(int i=0;i<N;i++)
+      cin>>arr[i];
+      int unique[200001]={0};
+      set<int> S;
+      S.insert(arr[N-1]);
+      for(int i=N-2;i>=0;i--)
+      {
+      unique[i]=S.size();
+      S.insert(arr[i]);
+      }
+      S.clear();
+      long long int answer=0;
+      for(int i=0;i<N;i++)
+      {
+      if(S.count(arr[i])==0)
+      answer+=unique[i];
+      S.insert(arr[i]);
+      }
+      cout<<answer;
+      }
+   **H 21 [C LANGUAGE]**
+   
+      #include <stdio.h>
+      #include <string.h>
+
+      int main()
+      {
+      int n;
+      char str[100];
+      fscanf(stdin, "%d", &n);
+      while(n--) {
+      int a[26];
+
+      int i;
+      for(i=0;i<26;++i) {
+      a[i] = 0;
+      }
+      fscanf(stdin, "%s", str);
+      for( i=0; i<strlen(str); ++i) {
+      a[str[i]-97]++;
+      }
+
+      for(i=0;i<26;++i) {
+      if(a[i] > 1) {
+      fprintf(stdout, "Yes\n");
+      i=27;
+      }
+      }
+      if(i==26)
+      fprintf(stdout, "No\n");
+      }
+      return 0;
+      }
+**H 22 [C LANGUAGE]**
+
+**H 23 [C LANGUAGE]**
+
+    #include <iostream>
+    #include <algorithm>
+    using namespace std;
+    int main()
+    {
+     int t;
+       cin>>t;
+     while(t--)
+        {
+      int n;
+           cin>>n;
+      int a[n+1];
+           for(int i=0;i<n;i++)
+             cin>>a[i];
+      sort(a,a+n);
+      int g=1,ag=0;
+      bool alive = 1;
+      for(int i=0;i<n;i++)
+         {
+       if(g>a[i])
+             {
+        alive=0;
+                break;
+       }
+            else
+             {
+        ag+=1;
+        g+=1;
+        if(ag%6==0)
+         g+=1;
+       }
+      }
+      if(alive)
+       cout<<"Rick now go and save Carl and Judas\n";
+      else
+         {
+       cout<<"Goodbye Rick\n";
+       cout<<ag<<endl;
+      }
+     }
+     return 0;
+    }
     
