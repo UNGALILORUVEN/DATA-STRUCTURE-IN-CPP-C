@@ -498,7 +498,7 @@
     }
 **TR 10 [CPP LANGUAGE]**
 
-      #include <bits/stdc++.h>
+    #include <bits/stdc++.h>
 
     using namespace std;
     #define MINIMUM(a,b) (((a)<(b))?(a):(b))
@@ -506,38 +506,45 @@
     int parent[maxN];
     int root(int u)
     {
-    if (parent[u]<0)
-     return(u);
-      return(parent[u]=root(parent[u]));
+     if (parent[u]<0)
+         return(u);
+       return(parent[u]=root(parent[u]));
     }
     int setSize(int u)
     {
-      return(-1*parent[root(u)]);
+       return(-1*parent[root(u)]);
     }
-        void merge(int u,int v)
+    void merge(int u,int v)
     {
        u=root(u),v=root(v);
-    if(u==v)
-     return;**TR13 (C++)Amit  has recently created a matrimonial site**
-
-     #include <iostream>
-    using namespace std;
-    #define ll long long int
-
-    void UNION(int a, int b){
-    a=0;
+       if(u==v)
+         return;
+       if(parent[v]<parent[u])
+        {
+         swap(parent[u],parent[v]);
+        }
+        parent[u]+=parent[v];
+       parent[v]=u;
     }
 
-    int main(){
-    int x,y,z;
-    cin>>x>>y;
-    cin>>z;
-    if(x==4 && y==5 && z==1)
-    cout<<"15";
-    else if(x==2 && y==5 && z==1)
-    cout<<"7";
-    else
-    cout<<"11";
+    int main()
+    {
+     memset(parent,-1,sizeof(parent));
+       cin>>n>>m;
+       int lol=0;
+       for (int i=0,u,v;i<m;i++)
+       {
+         cin>>u>>v;
+         u --,v --;
+         if(root(u)==root(v))
+             lol ++;
+         merge(u,v);
+       }
+       if(lol==1)
+         cout<<"YES";
+       else
+         cout<<"NO";
+       return 0;
     }
 **TR 11 [CPP LANGUAGE]**
 
