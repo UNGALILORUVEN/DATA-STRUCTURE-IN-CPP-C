@@ -325,6 +325,37 @@
      return 0;
 
     }
+    
+**SER11[CPP LANGUAGE]**
+
+        #include <iostream>
+        using namespace std;
+        int main()
+        {
+         long long int X[10],t,T1[10],K[10],T2[10],q,s=0;
+            cin>>t;
+            for(int i=0;i<t;i++)
+            {
+              cin>>q;
+              if(q==2)
+              {
+               cin>>K[i]>>T2[i];
+                  for(int j=0;j<i;j++)
+                  {
+                 if((T1[j]>=(T2[i]-K[i]))&&(T1[j]<=T2[i]))
+                   s+=X[j];
+                   }
+                cout<<s<<endl;
+                s=0;
+              }
+              else
+              {
+              cin>>X[i]>>T1[i];
+              }
+            }
+         return 0;
+        }
+
 **SER12[C LANGUAGE]**
 
      #include <stdio.h>
@@ -508,3 +539,32 @@
         printf("%lld",count);
         return 0;
     }
+    
+**SER 15 [C LANGUAGE]**
+
+         #include <stdio.h>
+        #include <math.h>
+
+                int main()
+                {
+                    long int n,i,x,root,val,flag=0;
+                    scanf("%ld",&n);
+                    for(i=1;i<=100000;i++)
+                    {
+                        val=(i*(i+1))/2;
+                        if(val>n/2)
+                        break;
+                        x=(n-val)*2;
+                        root=sqrt(x);
+                        if(x==(root*(root+1)))
+                        {
+                            flag=1;
+                            break;
+                        }
+                    }
+                    if(flag==1)
+                    printf("YES");
+                    else
+                    printf("NO");
+                    return 0;
+                }
