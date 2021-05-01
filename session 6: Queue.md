@@ -48,6 +48,93 @@
     }
 **Q 2 [CPP LANGUAGE]**
 
+        #include <iostream>
+        using namespace std;
+        struct node
+        {
+          int data;
+          node *next;
+        };
+        class Queue
+        {
+          private:
+          node *front,*rear;
+          public:
+          Queue()
+          {
+            front=NULL;
+            rear=NULL;
+          }
+          void enque()
+          {
+           printf("\n");
+          }
+          void insert(int value)
+          {
+            node *newnode=new node;
+            newnode->data=value;
+            newnode->next=NULL;
+              if(front==NULL)
+              {
+                front=rear=newnode;
+              }
+            else
+            {
+              rear->next=newnode;
+              rear=newnode;
+            }
+          }
+          void Delete()
+          {
+            if(front==NULL )
+              cout<<"Underflow"<<endl;
+            else
+            { 
+            node *temp;
+            temp=front;
+            front=front->next;
+            free(temp);
+            }
+          }
+          void display()
+          {
+            node *temp;
+            temp=front;
+            while(temp!=NULL)
+            {
+              cout<<temp->data<<"->";
+              temp=temp->next;
+            }
+            cout<<endl;
+          }
+        };
+        int main()
+        {
+          int ch,data;
+          Queue q;
+          do
+          {
+            cin>>ch;
+            switch(ch)
+            {
+              case 1:
+               {
+                 cin>>data;
+                 q.insert(data);
+                 break;
+               }
+              case 2:
+                q.Delete();
+                break;
+              case 3:
+                q.display();
+                break;
+            }
+          }while(ch!=0);
+         return 0;
+        }
+
+
 **Q 3 [CPP LANGUAGE]**
 
 **Q 4 [CPP LANGUAGE]**
@@ -186,6 +273,44 @@
     }
 **Q 9 [CPP LANGUAGE]**
 
+
+        #include <bits/stdc++.h>
+        using namespace std;
+        void gen(int n)
+        {
+         cout << "\n";
+        }
+        int f(int num)
+        {
+         long  decimal_num, remainder, base = 1, binary = 0, no_of_1s = 0;
+            decimal_num = num;
+            while (num > 0)
+            {
+                remainder = num % 2;
+                if (remainder == 1)
+                {
+                    no_of_1s++;
+                }
+                binary = binary + remainder * base;
+                num = num / 2;
+                base = base * 10;
+            }
+            return binary;
+        }
+        int main()
+        {
+          int x;
+          cin>>x;
+          while(x--)
+          {
+           int gg;
+           cin>>gg;
+           for(int i=1;i<=gg;i++)
+                      cout<<f(i)<<" ";
+                  cout<<endl;
+          }
+        } 
+
 **Q 10 [C LANGUAGE]**
 
     #include <stdio.h>
@@ -300,6 +425,163 @@
 **Q 15 [CPP LANGUAGE]**
 
 **Q 16 [CPP LANGUAGE]**
+
+        #include<bits/stdc++.h>
+        #include<iostream>
+        #define R 3
+        #define C 5
+        using namespace std;
+
+        // function to check whether a cell is valid / invalid
+        bool isVALID(int x, int y)
+        {
+            return (x >= 0 && y >= 0 && x < R && y < C);
+        }
+
+        // structure for storing coordinates of the cell
+        struct ele {
+            int i, j;
+        };
+
+        // Function to check whether the cell is delimiter
+        // which is (-1, -1)
+        bool isdelim(ele temp)
+        {
+            return (temp.i == -1 && temp.j == -1);
+        }
+
+        // Function to check whether there is still a fresh
+        // orange remaining
+        bool checkall(int arr[][C])
+        {
+            for (int x=0; x<R; x++)
+               for (int y=0; y<C; y++)
+                  if (arr[x][y] == 1)
+                     return true;
+            return false;
+        }
+
+        // This function finds if it is possible to rot all oranges or not.
+        // If possible, then it returns minimum time required to rot all,
+        // otherwise returns -1
+        int rotOranges(int arr[][C])
+        {
+            // Create a queue of cells
+            queue<ele> Q;
+            ele temp;
+            int ans = 0;
+
+            // Store all the cells having rotten orange in first time frame
+            for (int x=0; x<R; x++)
+            {
+               for (int y=0; y<C; y++)
+               {
+                    if (arr[x][y] == 2)
+                    {
+                        temp.i = x;
+                        temp.j = y;
+                        Q.push(temp);
+                    }
+                }
+            }
+
+            // Separate these rotten oranges from the oranges which will rotten
+            // due the oranges in first time frame using delimiter which is (-1, -1)
+            temp.i = -1;
+            temp.j = -1;
+            Q.push(temp);
+
+            // Process the grid while there are rotten oranges in the Queue
+            while (!Q.empty())
+            {
+                // This flag is used to determine whether even a single fresh
+                // orange gets rotten due to rotten oranges in current time
+                // frame so we can increase the count of the required time.
+                bool flag = false;
+
+                // Process all the rotten oranges in current time frame.
+                while (!isdelim(Q.front()))
+                {
+                    temp = Q.front();
+
+                    // Check right adjacent cell that if it can be rotten
+                    if (isVALID(temp.i+1, temp.j) && arr[temp.i+1][temp.j] == 1)
+                    {
+                        // if this is the first orange to get rotten, increase
+                        // count and set the flag.
+                        if (!flag) ans++, flag = true;
+
+                        // Make the orange rotten
+                        arr[temp.i+1][temp.j] = 2;
+
+                        // push the adjacent orange to Queue
+                        temp.i++;
+                        Q.push(temp);
+
+                        temp.i--; // Move back to current cell
+                    }
+
+                    // Check left adjacent cell that if it can be rotten
+                    if (isVALID(temp.i-1, temp.j) && arr[temp.i-1][temp.j] == 1) {
+                        if (!flag) ans++, flag = true;
+                        arr[temp.i-1][temp.j] = 2;
+                        temp.i--;
+                        Q.push(temp); // push this cell to Queue
+                        temp.i++;
+                    }
+
+                    // Check top adjacent cell that if it can be rotten
+                    if (isVALID(temp.i, temp.j+1) && arr[temp.i][temp.j+1] == 1) {
+                        if (!flag) ans++, flag = true;
+                        arr[temp.i][temp.j+1] = 2;
+                        temp.j++;
+                        Q.push(temp); // Push this cell to Queue
+                        temp.j--;
+                    }
+
+                    // Check bottom adjacent cell if it can be rotten
+                    if (isVALID(temp.i, temp.j-1) && arr[temp.i][temp.j-1] == 1) {
+                        if (!flag) ans++, flag = true;
+                        arr[temp.i][temp.j-1] = 2;
+                        temp.j--;
+                        Q.push(temp); // push this cell to Queue
+                    }
+
+                    Q.pop();
+                }
+
+                // Pop the delimiter
+                Q.pop();
+
+                // If oranges were rotten in current frame than separate the
+                // rotten oranges using delimiter for the next frame for processing.
+                if (!Q.empty()) {
+                    temp.i = -1;
+                    temp.j = -1;
+                    Q.push(temp);
+                }
+
+                // If Queue was empty than no rotten oranges left to process so exit
+            }
+
+            // Return -1 if all arranges could not rot, otherwise -1.
+            return (checkall(arr))? -1: ans;
+        }
+
+        // Drive program
+        int main()
+        {
+            int arr[100][C];
+            for(int x=0;x<4;x++)
+              for(int y=0;y<C;y++)
+                cin>>arr[x][y];
+            int ans = rotOranges(arr);
+            if (ans == -1)
+                cout <<"-1";
+            else
+                 cout <<ans << endl;
+            return 0;
+        }
 
 **Q 17 [CPP LANGUAGE]**
 
