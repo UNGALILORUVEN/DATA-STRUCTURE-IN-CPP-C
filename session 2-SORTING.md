@@ -49,6 +49,42 @@
     }
 **SORT 2 [CPP LANGUAGE]**
 
+        #include <iostream>
+        using namespace std;
+        void SelectionSort(int arr[], int n)
+        {
+          int minindex,temp=0;
+          for(int i=0; i<n-1; i++)
+          {
+            minindex=i;
+            for(int j=i+1; j<n; j++)
+            {
+              if(arr[j]<arr[minindex])
+                minindex=j;
+            }
+            temp=arr[i];
+            arr[i]=arr[minindex];
+            arr[minindex]=temp;
+            if(i==1)
+            {
+              for(int k=0; k<n; k++)
+                cout<<arr[k]<<" ";
+            }
+          }
+        }
+        int main()
+        {
+          int n,arr[20];
+          cin>>n;
+          for(int i=0; i<n; i++)
+            cin>>arr[i];
+          SelectionSort(arr,n);
+          cout<<"\nSorted Array:";
+          for(int i=0; i<n; i++)
+            cout<<arr[i]<<" ";
+         return 0;
+        }
+
 **SORT 3 [CPP LANGUAGE]**
 
 **SORT 4 [CPP LANGUAGE]**
@@ -100,6 +136,48 @@
         return 0;
         }
 **SORT 5 [CPP LANGUAGE]**
+
+        #include <stdio.h>
+        void sort(int a[],int n,int k);
+        void sort(int a[],int n,int k)
+        { 
+           int l;int i;
+           l=a[0];
+               for(i=1;i<n;i++)
+               {
+                   if(a[i]>l)
+                   {
+                       l=a[i];
+                   }
+               }
+               if(l>k)
+               {
+               printf("%d\n",l-k);
+               }
+               else
+               printf("-1\n");
+        }
+
+        int main() 
+        {
+           int i,j,k,t,n,m,l;
+           scanf("%d",&t);
+           while(t--)
+           {
+               scanf("%d %d",&n,&m);
+                int a[n];
+               for(i=0;i<n;i++)
+               {
+                   scanf("%d",&a[i]);
+               }
+
+             sort(a,n,m);
+
+
+           }
+            return 0;
+        }
+
 
 **SORT 6 [CPP LANGUAGE]**
 
@@ -205,6 +283,63 @@
 **SORT 9 [CPP LANGUAGE]**
 
 **SORT 10 [CPP LANGUAGE]**
+
+        #include<iostream>
+        using namespace std;
+        int MEGA_SALE(int [],int ,int ) ;
+        void bubble_sort(int [],int ) ;
+        int minof(int ,int ) ;
+        int main()
+         {
+         int t,arr[100],no,i,k ;
+         cin>>t ;
+         while(t--)
+         {
+             cin>>no ;
+             cin>>k ;
+             for(i=0;i<no;i++)
+                 cin>>arr[i] ;
+
+             no=MEGA_SALE(arr,no,k) ;
+             cout<<abs(no)<<endl ;
+         }
+         return 0;
+        }
+
+        int MEGA_SALE(int arr[],int no,int k)
+        {
+            int i ;
+            bubble_sort(arr,no) ;
+
+            int sum=0 ;
+            for(i=0;i<k;i++)
+                sum=minof(sum,sum+arr[i]) ;
+
+            return sum ;
+        }
+
+        void bubble_sort(int arr[],int no)
+        {
+            int i,j,temp ;
+            for(i=0;i<no-1;i++)
+            {
+                for(j=0;j<no-i-1;j++)
+                {
+                    if(arr[j]>arr[j+1])
+                    {
+                        temp=arr[j] ;
+                        arr[j]=arr[j+1] ;
+                        arr[j+1]=temp ;
+                    }
+                }
+            }
+        }
+
+        int minof(int a,int b)
+        {
+            return a>b?b:a ;
+        }
+
 
 **SORT 11 [C LANGUAGE]**
 
