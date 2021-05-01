@@ -137,6 +137,141 @@
 
 **Q 3 [CPP LANGUAGE]**
 
+    #include <iostream>
+    #define MAX 5
+    using namespace std;
+    /*
+     * Class Circular Queue
+     */
+    class Circular_Queue
+    {
+        private:
+            int *cqueue_arr;
+            int front, rear;
+        public:
+            Circular_Queue()
+            {
+                cqueue_arr = new int [MAX];
+                rear = front = -1;
+            }
+            /*
+             * Insert into Circular Queue
+             */
+            void push(int x)
+            {
+                if ((front == 0 && rear == MAX-1) || (front == rear+1))
+                {
+                    cout<<"Overflow \n";
+                    return;
+                }
+                if (front == -1)
+                {
+                    front = 0;
+                    rear = 0;
+                }
+                else
+                {
+                    if (rear == MAX - 1)
+                        rear = 0;
+                    else
+                        rear = rear + 1;
+                }
+                cqueue_arr[rear] = x ;
+            }
+            /*
+             * Delete from Circular Queue
+             */
+            void del()
+            {
+                if (front == -1)
+                {
+                    cout<<"Underflow\n";
+                    return ;
+                }
+
+                if (front == rear)
+                {
+                    front = -1;
+                    rear = -1;
+                }
+                else
+                {
+                    if (front == MAX - 1)
+                        front = 0;
+                    else
+                        front = front + 1;
+                }
+            }
+            /*
+             * Display Circular Queue
+             */
+            void display()
+            {
+                int front_pos = front, rear_pos = rear;
+                if (front == -1)
+                {
+                    cout<<"Queue is empty\n";
+                    return;
+                }
+
+                if (front_pos <= rear_pos)
+                {
+                    while (front_pos <= rear_pos)
+                    {
+                        cout<<cqueue_arr[front_pos]<<"->";
+                        front_pos++;
+                    }
+
+                }
+                else
+                {
+                    while (front_pos <= MAX - 1)
+                    {
+                        cout<<cqueue_arr[front_pos]<<"->";
+                        front_pos++;
+                    }
+                    front_pos = 0;
+                    while (front_pos <= rear_pos)
+                    {
+                        cout<<cqueue_arr[front_pos]<<"->";
+                        front_pos++;
+                    }
+
+                }
+                cout<<cqueue_arr[front]<<"->"<<endl;
+            }
+    };
+    /*
+     * Main
+     */
+    int main()
+    {
+        int choice, x;
+        Circular_Queue cq;
+        do
+        {
+            cin>>choice;
+            switch(choice)
+            {
+              case 0: break; 
+            case 1:
+                cin>>x; 
+                cq.push(x);
+         break;
+     case 2:
+                cq.del();
+         break;
+            case 3:
+                cq.display();
+         break;
+
+     default:
+         cout<<"Wrong choice\n";
+     }
+        }
+        while(choice != 0);
+        return 0;
+    }
 **Q 4 [CPP LANGUAGE]**
 
 **Q 5 [CPP LANGUAGE]**
@@ -418,11 +553,37 @@
     }
 **Q 12 [CPP LANGUAGE]**
 
+    #include <iostream>
+    using namespace std;
+
+    int FIND(int ,int );
+
+    int main() {
+
+      int t,n,k;
+      cin >> t;
+      while(t--)
+      {
+        cin >> n >> k;
+        if(k > n-3)
+        {
+          cout << "yes\n";
+        }
+        else
+        {
+          cout << "no\n";
+        }
+      }
+
+      return 0;
+    }
 **Q 13 [CPP LANGUAGE]**
 
 **Q 14 [CPP LANGUAGE]**
 
-**Q 15 [CPP LANGUAGE]**
+**Q 15 [CPP LANGUAGE] GIVEN A BINARY....**
+
+**Q 15 [CPP LANGUAGE] LONG AGO IN INDIA....**
 
 **Q 16 [CPP LANGUAGE]**
 
@@ -634,6 +795,7 @@
 
 **Q 19 [CPP LANGUAGE]**
 
+    
 **Q 20 [CPP LANGUAGE]**
 
     #include<bits/stdc++.h>
@@ -696,4 +858,65 @@
  
     return 0;
     }
-**Q 21 [CPP LANGUAGE]**
+**Q 21 [C LANGUAGE]**
+
+    #include <stdio.h>
+
+    int main()
+    {
+     int array123 [100];
+        long int N,i;
+        long long int prod;
+        scanf("%li",&N);
+        long int a[N];
+        long int big,bigger,biggest,temp;
+        for(i=0;i<N;i++)
+        {
+         scanf("%li",&a[i]);
+        }
+        printf("-1\n-1\n");
+        big=a[0];
+        bigger=a[1];
+        if(a[0]>bigger)
+        {
+         bigger=a[0];
+         big=a[1];
+        }
+        biggest=a[2];
+        if(biggest<bigger && biggest>=big)
+        {
+         temp=bigger;
+         bigger=biggest;
+         biggest=temp;
+        }
+        if(biggest<big)
+        {
+         temp=big;
+         big=biggest;
+         biggest=bigger;
+         bigger=temp;
+        }
+        prod=big*bigger*biggest;
+        printf("%lli\n",prod);
+        for(i=3;i<N;i++)
+        {
+      if(a[i]>biggest)
+      {
+       big=bigger;
+       bigger=biggest;
+       biggest=a[i];   
+      }
+      else if(a[i]>bigger)
+      {
+       big=bigger;
+       bigger=a[i];   
+      }
+      else if(a[i]>big)
+      {
+       big=a[i];
+      }
+      prod=big*bigger*biggest;
+      printf("%lli\n",prod);
+        }
+        return 0;
+    }
