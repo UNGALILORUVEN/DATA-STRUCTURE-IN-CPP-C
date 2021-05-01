@@ -428,8 +428,76 @@
       }
 **LL 10 [CPP LANGUAGE]**
 
+      #include <bits/stdc++.h>
+
+      using namespace std;
+
+      struct Node {
+          int lol;
+      };
+
+      void Create() {
+          ;
+      }
+
+      int main() {
+          int n;
+          cin >> n;
+          vector <int> arr(n);
+          for (int i=0; i<n; i++) cin >> arr[i];
+          int d;
+          cin >> d;
+          bool flag=true;
+          for (int i=0; i<n; i++) {
+              if (arr[i]==d) {
+                  flag = false;
+                  break;
+              }
+          }
+          if (flag) {
+              cout << "Invalid Node! \n";
+          }
+          cout << "Linked List : ";
+          for (int i=0; i<n; i++) {
+              if (arr[i]==d)
+                  continue;
+              cout << "->" << arr[i];
+          }
+          return 0;
+      }
 **LL 11 [CPP LANGUAGE]**
 
+      #include <iostream>
+      using namespace std;
+      struct node
+      {
+
+      };
+      void create();
+      int main() {
+      int n,i,d,a[100],f=0;
+        cin>>n;
+        for(i=0;i<n;i++)
+          cin>>a[i];
+        cin>>d;
+        for(i=0;i<n;i++)
+        {
+          if(a[i]==d)
+            f=1;
+        }
+        if(f==0)
+        cout<<"Invalid position!\n";
+        cout<<"Linked List : ";
+
+        for(i=0;i<n;i++)
+        {
+          if(a[i]==d)
+            continue;
+          else
+            cout<<"->"<<a[i];
+        }
+       return 0;
+      }
 **LL 12 [CPP LANGUAGE]**
 
 **LL 13 [CPP LANGUAGE]**
@@ -691,6 +759,63 @@
  
 **LL 16 [CPP LANGUAGE]**
 
+      #include<iostream>
+      using namespace std;
+      struct node
+      {
+        int data;
+        struct node *next;
+      }*head,*temp;
+      int main()
+      {
+        int t,s;
+        cin>>t;
+        s=t/2;
+        head=0;
+        while(t--)
+        {
+          struct node* new_node =(struct node*) malloc(sizeof(struct node));
+          cin>>new_node->data;
+          new_node->next=0;
+          if(head==0)
+          {
+            head=new_node;
+            temp=new_node;
+          }
+          else
+          {
+            temp->next=new_node;
+            temp=new_node;
+          }
+        }
+
+        struct node *prevnode,*currnode,*nextnode;
+        prevnode=0;
+        currnode=nextnode=head;
+        while(nextnode!=0)
+        {
+          nextnode=nextnode->next;
+          currnode->next=prevnode;
+          prevnode=currnode;
+          currnode=nextnode;
+        }
+        head=prevnode;
+        temp=head;
+        cout<<"Linked list : ";
+        while(temp!=0)
+        {
+          cout<<"-->"<<temp->data;
+          temp=temp->next;
+        }
+        cout<<endl;
+        temp=head;
+        while(s--)
+        {
+          temp=temp->next;
+        }
+        cout<<"The middle element is ["<<temp->data<<"]";
+        return 0;
+      }
 **LL 17 [CPP LANGUAGE]**
    
    
@@ -701,12 +826,85 @@
 
 **LL 20 [CPP LANGUAGE]**
 
+      #include <iostream>
+      using namespace std;
+      struct node
+      {
+        int data;
+        struct node *next;
+      }*head,*temp,*ref;
+      int main()
+      {
+        int n;
+        cin>>n;
+        head=0;
+        while(n--)
+        {
+          struct node* new_node =(struct node*) malloc(sizeof(struct node));
+          cin>>new_node->data;
+          new_node->next=0;
+          if(head==0)
+          {
+            head=new_node;
+            temp=new_node;
+          }
+          else
+          {
+            temp->next=new_node;
+            temp=new_node;
+          }
+        }
+        for(temp=head;temp!=0;temp=temp->next)
+        {
+          for(ref=temp->next;ref!=0;ref=ref->next)
+          {
+            if(temp->data > ref->data)
+            {
+              int tmp=temp->data;
+              temp->data=ref->data;
+              ref->data= tmp;
+            }
+          }
+        }
+        temp=head;
+        cout<<"Marks : ";
+        while(temp!=0)
+        {
+          cout<<"->"<<temp->data;
+          temp=temp->next;
+        }
+        return 0;
+      }
 **LL 21 [CPP LANGUAGE]**
 
 **LL 22 [CPP LANGUAGE]**
 
 **LL 23 [CPP LANGUAGE]**
 
+      #include <bits/stdc++.h>
+
+      using namespace std;
+
+      struct node {
+          int lol;
+      };
+
+      int main() {
+          int n;
+          cin >> n;
+          int arr[n];
+          for (int i=0; i<n; i++)
+              cin >> arr[i];
+          set <int> uniq;
+          cout << "List : ";
+          for (int i=0; i<n; i++) {
+              if (uniq.find(arr[i])!=uniq.end()) {
+                  continue;
+              }
+              cout << "->" << arr[i];
+              uniq.insert(arr[i]);
+          }
+      }
 **LL 24 [CPP LANGUAGE]**
 
 **LL 25 [CPP LANGUAGE]**
