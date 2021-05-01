@@ -1,4 +1,139 @@
-**ST 1 [CPP LANGUAGE]**
+**ST 1 [C LANGUAGE]**
+
+          #include <stdio.h>
+            #include <stdlib.h>
+
+            // Stack is represented using linked list
+            struct stack
+            {
+                int data;
+                struct stack *next;
+            };
+
+            // Utility function to initialize stack
+            void initStack(struct stack **s)
+            {
+                *s = NULL;
+            }
+
+            // Utility function to chcek if stack is empty
+            int isEmpty(struct stack *s)
+            {
+                if (s == NULL)
+                    return 1;
+                return 0;
+            }
+
+            // Utility function to push an item to stack
+            void push(struct stack **s, int x)
+            {
+                struct stack *p = (struct stack *)malloc(sizeof(*p));
+
+                if (p == NULL)
+                {
+                    fprintf(stderr, "Memory allocation failed.\n");
+                    return;
+                }
+
+                p->data = x;
+                p->next = *s;
+                *s = p;
+            }
+
+            // Utility function to remove an item from stack
+            int pop(struct stack **s)
+            {
+                int x;
+                struct stack *temp;
+
+                x = (*s)->data;
+                temp = *s;
+                (*s) = (*s)->next;
+                free(temp);
+
+                return x;
+            }
+
+            // Function to find top item
+            int top(struct stack *s)
+            {
+                return (s->data);
+            }
+
+            // Recursive function to insert an item x in sorted way
+            void sortedInsert(struct stack **s, int x)
+            {
+                // Base case: Either stack is empty or newly inserted
+                // item is greater than top (more than all existing)
+                if (isEmpty(*s) || x > top(*s))
+                {
+                    push(s, x);
+                    return;
+                }
+
+                // If top is greater, remove the top item and recur
+                int temp = pop(s);
+                sortedInsert(s, x);
+
+                // Put back the top item removed earlier
+                push(s, temp);
+            }
+
+            // Function to sort stack
+            void sortStack(struct stack **s)
+            {
+                // If stack is not empty
+                if (!isEmpty(*s))
+                {
+                    // Remove the top item
+                    int x = pop(s);
+
+                    // Sort remaining stack
+                    sortStack(s);
+
+                    // Push the top item back in sorted stack
+                    sortedInsert(s, x);
+                }
+            }
+
+            // Utility function to print contents of stack
+            void printStack(struct stack *s)
+            {
+                while (s)
+                {
+                    printf("%d ", s->data);
+                    s = s->next;
+                }
+                printf("\n");
+            }
+
+            // Driver Program
+            int main()
+            {
+             int n,i;
+                scanf("%d",&n);
+                int arr[n];
+                for(i=0;i<n;i++)
+                scanf("%d",&arr[i]);
+
+             struct stack *top;
+
+                initStack(&top);
+                for(i=0;i<n;i++)
+                push(&top,arr[i]);
+
+                printf("Stack elements before sorting:\n");
+                printStack(top);
+
+                sortStack(&top);
+               // printf("\n");
+
+                printf("Stack elements after sorting:\n");
+                printStack(top);
+
+                return 0;
+            }
+
 
 **ST 2 [CPP LANGUAGE]**
 
@@ -218,6 +353,91 @@
     }
 **ST 9 [CPP LANGUAGE]**
 
+            #include<bits/stdc++.h>
+            using namespace std;
+              struct STACK
+              {};
+            //Function to return precedence of operators
+            int prec(char c)
+            {
+                if(c == '^')
+                return 3;
+                else if(c == '*' || c == '/')
+                return 2;
+                else if(c == '+' || c == '-')
+                return 1;
+                else
+                return -1;
+            }
+
+            // The main function to convert infix expression
+            //to postfix expression
+            void infixToPostfix(string s)
+            {
+                std::stack<char> st;
+                st.push('N');
+                int l = s.length();
+                string ns;
+                for(int i = 0; i < l; i++)
+                {
+                    // If the scanned character is an operand, add it to output string.
+                    if((s[i] >= 'a' && s[i] <= 'z')||(s[i] >= 'A' && s[i] <= 'Z'))
+                    ns+=s[i];
+
+                    // If the scanned character is an ‘(‘, push it to the stack.
+                    else if(s[i] == '(')
+
+                    st.push('(');
+
+                    // If the scanned character is an ‘)’, pop and to output string from the stack
+                    // until an ‘(‘ is encountered.
+                    else if(s[i] == ')')
+                    {
+                        while(st.top() != 'N' && st.top() != '(')
+                        {
+                            char c = st.top();
+                            st.pop();
+                           ns += c;
+                        }
+                        if(st.top() == '(')
+                        {
+                            char c = st.top();
+                            st.pop();
+                        }
+                    }
+
+                    //If an operator is scanned
+                    else{
+                        while(st.top() != 'N' && prec(s[i]) <= prec(st.top()))
+                        {
+                            char c = st.top();
+                            st.pop();
+                            ns += c;
+                        }
+                        st.push(s[i]);
+                    }
+
+                }
+                //Pop all the remaining elements from the stack
+                while(st.top() != 'N')
+                {
+                    char c = st.top();
+                    st.pop();
+                    ns += c;
+                }
+
+                cout << ns << endl;
+
+            }
+
+            //Driver program to test above functions
+            int main()
+            {
+                string exp ;
+              cin>>exp;
+                infixToPostfix(exp);
+                return 0;
+            }
 **ST 10 [CPP LANGUAGE]**
 
       #include <iostream>
