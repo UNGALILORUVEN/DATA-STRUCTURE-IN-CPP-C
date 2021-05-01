@@ -1,6 +1,35 @@
 **H 1 [CPP LANGUAGE]**
 
+      #include <bits/stdc++.h>
 
+      using namespace std;
+
+      map <char,bool> mp;
+
+      int main()
+      {
+          int t;
+          cin >> t;
+          while(t--)
+          {
+              mp.clear();
+              string str;
+              cin >> str;
+              bool flag=0;
+              for(char ch : str)
+              {
+                  if(mp[ch])
+                  {
+                      flag=1;
+                      break;
+                  }
+                  mp[ch]=1;
+              }
+
+              cout << (flag?"Yes\n":"No\n" );
+
+          }
+      }
 **H 2 [CPP LANGUAGE]**
 
       #include <iostream>
@@ -205,7 +234,35 @@
 
 **H 11 [CPP LANGUAGE]**
 
-
+      #include <bits/stdc++.h>
+      using namespace std;
+      int main()
+      {
+          int t;
+          cin >> t;
+          string str;
+          for (int i = 0; i < t; i++)
+          {
+              cin >> str;
+              int x = 0, y = 0, z = 0, w = 0;
+              for (int j = 0; j < str.size(); j++)
+              {
+                  if (str[j] == 'r')
+                      x++;
+                  if (str[j] == 'u')
+                      y++;
+                  if (str[j] == 'b')
+                      z++;
+                  if (str[j] == 'y')
+                      w++;
+              }
+              //aayan
+              int a = min(x, y);
+              int b = min(z, w);
+              int c = min(a, b);
+              cout << c << endl;
+          }
+      }
 **H 12 [CPP LANGUAGE]**
 
       #include<iostream>
@@ -306,6 +363,63 @@
 
 **H 16 [CPP LANGUAGE]**
 
+      #include <iostream>
+      #include <algorithm>
+      #include <bits/stdc++.h>
+      using namespace std;
+
+      int main()
+      {
+      unordered_map<int,int> M;
+      int N,maxnum=0;
+      cin>>N;
+      for(int i=0;i<N;i++)
+      {
+      int num;
+      cin>>num;
+      int sum=0;
+      int temp=num;
+      while(temp)
+      {
+      sum+=temp%10;
+      temp/=10;
+      }
+      num=(num^sum);
+      if(num>maxnum)
+      maxnum=num;
+      auto it=M.find(num);
+      if(it!=M.end())
+      it->second++;
+      else
+      M.insert(make_pair(num,0));
+      }
+      int answer=0,m=0;
+      for(auto it=M.begin();it!=M.end();it++)
+      {
+      answer+=it->second;
+      if(it->second>m)
+      m=it->second;
+      }
+      if(m!=0)
+      {
+      int minvalue=INT_MAX;
+      for(auto it=M.begin();it!=M.end();it++)
+      if(it->second==m)
+      if(minvalue>it->first)
+      minvalue=it->first;
+      cout<<minvalue;
+      }
+      else
+      {
+      int maxvalue=INT_MIN;
+      for(auto it=M.begin();it!=M.end();it++)
+      if(it->first>maxvalue)
+      maxvalue=it->first;
+      cout<<maxvalue;
+      }
+      cout<<" "<<answer;
+      return 0;
+      }
 **H 17 [CPP LANGUAGE]**
 
         #include<bits/stdc++.h>
@@ -469,8 +583,99 @@
       }
       return 0;
       }
-**H 22 [C LANGUAGE]**
+**H 22 [CPP LANGUAGE]**
 
+      #include <bits/stdc++.h>
+
+
+      using namespace std;
+
+      #define pb push_back
+      #define mp make_pair
+      #define ff first
+      #define ss second
+      #define vint vector<int>
+      #define vll vector<long long int>
+      #define endl cout << '\n'
+      #define fre(i, l, n) for (int i = l; i < n; ++i)
+      #define fr(i, l, n) for (int i = l; i <= n; i++)
+      #define rfre(i, n, l) for (int i = n - 1; i >= l; i--)
+      #define rfr(i, n, l) for (int i = n; i >= l; --i)
+      #define tab '\t'
+      #define debug cout << '*';
+      #define s(a) cin >> a;
+      #define p(a) cout << a;
+      typedef long long int ll;
+      typedef unsigned long long int ull;
+      typedef pair<int, int> pii;
+      typedef pair<long long int, long long int> pll;
+      typedef pair<int, pair<int, int>> tii;
+      typedef vector<int> vec;
+      typedef vector<long long> vecll;
+      typedef vector<pair<int, int>> vec_pii;
+      typedef vector<pair<long long int, long long int>> vec_pll;
+      typedef vector<vector<int>> ugraph;
+      typedef vector<vector<pair<int, int>>> wgraph;
+      #define mp make_pair
+      #define pb push_back
+      #define lb lower_bound
+      #define ub upper_bound
+      #define mod 1000000007
+      #define Pi 3.14159265358979
+      #define gcd(a, b) __gcd(a, b)
+      #define sf(n) scanf("%lld", &(n))
+      #define pf(n) printf("%lld\n", (n))
+      #define min3(a, b, c) (min((c), min((a), (b))))
+      #define max3(a, b, c) (max((a), max((b), (c))))
+      #define w(t) while (t--)
+      #define flt(a) cout << fixed << setprecision(a)
+      bool vow(char ch)
+      {
+          if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+          {
+              return true;
+          }
+          return false;
+      }
+
+      int main()
+      {
+          ios::sync_with_stdio(false);
+          cin.tie(0);
+          cout.tie(0);
+          ll t;
+          s(t);
+          w(t)
+          {
+              string str;
+              cin >> str;
+              int hash[26] = {0};
+              for (ll i = 0; i < str.length(); i++)
+              {
+                  if (!vow(str[i]))
+                  {
+                      hash[str[i] - 'a']++;
+                  }
+              }
+              ll cnt = 0;
+              for (ll i = 0; i < 26; i++)
+              {
+                  if (hash[i])
+                  {
+                      cnt++;
+                  }
+              }
+              if (cnt % 2)
+              {
+                  cout << "HE!\n";
+              }
+              else
+              {
+                  cout << "SHE!\n";
+              }
+          }
+          return 0;
+      }
 **H 23 [C LANGUAGE]**
 
     #include <iostream>
