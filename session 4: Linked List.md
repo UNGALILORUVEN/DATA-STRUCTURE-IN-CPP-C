@@ -53,9 +53,167 @@
     }
 **LL 2 [CPP LANGUAGE]**
 
+            #include <iostream>
+            #include <cstdlib>
+
+            using namespace std;
+
+            struct node {
+                int data;
+                node *next;
+            } *head = NULL;
+
+            void insert(struct node** head_ref, int data) {
+                struct node* newnode = (node*)malloc(1*sizeof(struct node));
+                newnode->data = data;
+                newnode->next = NULL;
+                if (*head_ref == NULL) {
+                    //*head = &newnode;
+                    *head_ref = newnode;
+                    return;
+                }
+                struct node* ptr = *head_ref;
+                while(ptr->next != NULL) {
+                    ptr = ptr->next;
+                }
+                ptr->next = newnode;
+            }
+
+            void display() {
+              ;
+            }
+
+            void display(struct node** head_ref) {
+                cout << "Linked List : ";
+                struct node* ptr = *head_ref;
+                while(ptr!=NULL) {
+                    cout << "->" << ptr->data;
+                    ptr = ptr->next;
+                }
+            }
+
+            int main() {
+                int n;
+                cin >> n;
+                int data;
+                while(n--) {
+                    cin >> data;
+                    insert(&head, data);
+                }
+                display(&head);
+                return 0;
+            }
+
 **LL 3 [CPP LANGUAGE]**
 
 **LL 4 [CPP LANGUAGE]**
+
+            #include <stdio.h>
+            #include<stdlib.h>
+            struct Node
+            {};
+            struct node
+            {
+                int data;
+                struct node* link;
+            };
+            struct node* root=NULL;
+            void display();
+            void addatend();
+            void Create()
+            {}
+            void addbef(int,int);
+            int main() {
+                int  ch,i,n,x;
+              scanf("%d",&ch);
+
+              for(i=0;i<ch;i++)
+              {
+               addatend();
+              }
+              scanf("%d",&n);
+              scanf("%d",&x);
+              addbef(n,x);
+              printf("Linked List : ");
+              display();
+              return 0;
+            }
+            void addatend()
+            {
+                struct node* temp;
+                temp=(struct node*)malloc(sizeof(struct node));
+                //printf("Enter node data\n");
+                scanf("%d",&temp->data);
+                temp->link=NULL;
+                if(root==NULL)
+                {
+                    root=temp;
+                }
+                else
+                {
+                    struct node* p;
+                    p=root;
+                    while(p->link!=NULL)
+                    {
+                        p=p->link;
+                    }
+                    p->link=temp;
+                    }
+            }
+            void display()
+            {
+                struct node* temp;
+                temp=root;
+                if(temp==NULL)
+                {
+                    printf(" ");
+
+                }
+                else
+                {
+                    while(temp!=NULL)
+                    {
+                        printf("->%d",temp->data);
+                        temp=temp->link;
+                    }
+                }
+            }
+            void addbef(int n,int x)
+            {
+              int flag=0;
+              struct node *temp=root;
+              if(temp->data==n)
+              {
+                 struct node * t=(struct node*)malloc(sizeof(struct node));
+              t->data=x;
+              t->link=root;
+              root=t;
+              }
+            else
+            {
+              while(temp->link!=NULL)
+              {
+                if(temp->link->data==n)
+                {
+                  flag=1;
+                  break;
+                }
+               temp=temp->link;
+              }
+              if(flag==1)
+              {
+              struct node * t=(struct node*)malloc(sizeof(struct node));
+              t->data=x;
+              t->link=temp->link;
+              temp->link=t;
+              }
+              else
+              {
+                printf("Node not found! \n");
+              }
+            }
+            }
+
 
 **LL 5 [CPP LANGUAGE]**
 
@@ -128,6 +286,64 @@
     }
     
 **LL 8 [CPP LANGUAGE]**
+
+            #include<iostream>
+            using namespace std;
+            struct node
+            {
+              int data;
+              struct node *next;
+            }*start,*temp;
+            void Create()
+            {
+              int n;
+              cin>>n;
+              start=NULL;
+              while(n--)
+              {
+                node *new_node= new node;
+                cin>>new_node->data;
+                new_node->next=0;
+                if(start==NULL)
+                {
+                  start=new_node;
+                  temp=new_node;
+                }
+                else
+                {
+                  temp->next=new_node;
+                  temp=new_node;
+                }
+              }
+            }
+            int main()
+            {
+              Create();
+              int num;
+              cin>>num;
+              temp=start;
+              while(temp!=0)
+              {
+                if(temp->data==num)
+                {
+                  start=temp;
+                  break;
+                }
+                temp=temp->next;
+              }
+              if(temp==0)
+              {
+                cout<<"Invalid Node! "<<endl;
+              }
+              temp=start;
+              cout<<"Linked List : ";
+              while(temp!=0)
+              {
+                cout<<"->"<<temp->data;
+                temp=temp->next;
+              }
+
+            }
 
 **LL 9 [CPP LANGUAGE]**
 
@@ -398,6 +614,8 @@
 
 **LL 17 [CPP LANGUAGE]**
    
+   
+
 **LL 18 [CPP LANGUAGE]**
 
 **LL 19 [CPP LANGUAGE]**
