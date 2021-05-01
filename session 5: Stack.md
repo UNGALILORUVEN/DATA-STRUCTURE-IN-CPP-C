@@ -4,6 +4,106 @@
 
 **ST 3 [CPP LANGUAGE]**
 
+            #include <iostream>
+            using namespace std;
+            struct MYStack
+            {
+             int info;
+               MYStack *next;
+            }*top,*newptr,*save,*ptr;
+            MYStack *Newnode(int);
+            void Push(MYStack*);
+            void pop();
+            void findMiddle(MYStack *);
+            void display(MYStack*);
+
+            void deleteMiddle();
+            int main() {
+             int inf,n,i;
+               cin>>n;
+               top=NULL;
+               if(2<1)
+                {
+                 cout<<"struct MYStack *createMyStack ()";
+                }
+               for(i=0;i<n;i++)
+                {
+                 cin>>inf;
+                   newptr=Newnode(inf);
+                   Push(newptr);
+                }
+               //display(top);
+               if(2<1)
+                {
+                 cout<<"struct MYStack *createMyStack()";
+                }
+               pop();
+               pop();
+               findMiddle(top);
+             return 0;
+            }
+
+            MYStack *Newnode(int n)
+            {
+             ptr=new MYStack;
+               ptr->info=n;
+               ptr->next=NULL;
+               return ptr;
+            }
+
+            void Push(MYStack *np)
+            {
+             if(top==NULL)
+                   top=np;
+               else
+                {
+                 save=top;
+                   top=np;
+                   np->next=save;
+                }
+            }
+
+            void pop()
+            {
+             if(top==NULL)
+                   cout<<"UNDERFLOW";
+               else
+                {
+                 cout<<"Item popped is "<<top->info<<endl;
+                   ptr=top;
+                   top=top->next;
+                   delete ptr;
+                }
+            }
+
+            void display(MYStack *np)
+            {
+             while(np!=NULL)
+                {
+                 cout<<np->info<<"->";
+                   np=np->next;
+                }
+            }
+
+            void findMiddle(MYStack *np)
+            {
+             MYStack *t;
+               t=np;
+               int n=0;
+               while(t!=NULL)
+                {
+                   n++;
+                   t=t->next;
+                }
+               n=n/2;
+               t=np;
+               while(n--)
+                {
+                 t=t->next;
+                }
+               cout<<"Middle Element is "<<t->info;
+            }
+
 **ST 4 [CPP LANGUAGE]**
 
 **ST 5 [CPP LANGUAGE]**
@@ -209,7 +309,119 @@
     }
 **ST 12 [CPP LANGUAGE]**
 
-**ST 13 [CPP LANGUAGE]**
+**ST 13 [C LANGUAGE]**
+
+            #include<stdio.h>
+            #include<stdlib.h>
+            #define bool int
+
+            struct sNode
+            {
+             char data;
+             struct sNode *next;
+            };
+
+            void push(struct sNode** top_ref,
+                int new_data);
+            int pop(struct sNode** top_ref);
+            bool isEmpty(struct sNode* top);
+            void Display(struct sNode* top);
+
+            void insertAtBottom(struct sNode** top_ref,int item)
+            {
+             if (isEmpty(*top_ref))
+              push(top_ref, item);
+             else
+             { 
+              int temp = pop(top_ref);
+              insertAtBottom(top_ref, item);
+
+              push(top_ref, temp);
+             }
+            }
+
+            void reverse(struct sNode** top_ref)
+            {
+             if (!isEmpty(*top_ref))
+             { 
+              int temp = pop(top_ref);
+              reverse(top_ref);
+
+              insertAtBottom(top_ref, temp);
+             }
+            }
+
+            int main()
+            {
+             struct sNode *s = NULL;
+               int n;
+               scanf("%d",&n);
+               while(n--)
+                {
+                  int t;
+                  scanf("%d",&t);
+               push(&s, t);
+                }
+
+             printf("\nOriginal Stack ");
+             Display(s);
+             reverse(&s);
+             printf("\nReversed Stack ");
+             Display(s);
+             return 0;
+            }
+
+            bool isEmpty(struct sNode* top)
+            {
+             return (top == NULL)? 1 : 0;
+            }
+
+            void push(struct sNode** top_ref,int new_data)
+            {  
+             struct sNode* new_node = (struct sNode*) malloc(sizeof(struct sNode));
+
+             if (new_node == NULL)
+             {
+              printf("Stack overflow \n");
+              exit(0);
+             }
+
+             new_node->data = new_data;
+
+             new_node->next = (*top_ref);
+
+             (*top_ref) = new_node;
+            }
+
+            int pop(struct sNode** top_ref)
+            {
+             char res;
+             struct sNode *top;
+
+             if (*top_ref == NULL)
+             {
+              printf("Stack overflow \n");
+              exit(0);
+             }
+             else
+             {
+              top = *top_ref;
+              res = top->data;
+              *top_ref = top->next;
+              free(top);
+              return res;
+             }
+            }
+
+            void Display(struct sNode* top)
+            {
+             printf("\n");
+             while (top != NULL)
+             {
+              printf("%d ", top->data);
+              top = top->next;
+             }
+            }
 
 **ST 14 [CPP LANGUAGE]**
 
@@ -263,5 +475,70 @@
 **ST 18 [CPP LANGUAGE]**
 
 **ST 19 [CPP LANGUAGE]**
+
+            #include <iostream>
+            #include <vector>
+            #include <stack>
+
+            using namespace std;
+
+            int main()
+            {
+                int q, n, v;
+                vector<int> primes;
+                primes.push_back(2);
+                primes.push_back(3);
+                for(int i = 5; i <= 10000; i++)
+                {
+                    int no = 0;
+                    for(int j = 2; j*j <= i; j++)
+                    {
+                        if(i%j == 0)
+                            no = 1;
+                    }
+                    if(!no)
+                        primes.push_back(i);
+                }
+                cin>>n>>q;
+                stack<int> stack1, stack2, stack3;
+                for(int i = 0 ; i < n; i++)
+                {
+                    cin>>v;
+                    stack1.push(v);
+                }
+                for(int i = 0 ; i < q; i++)
+                {
+                    if(stack1.empty())
+                        break;
+                    int cur = primes[i];
+                    while(!stack1.empty())
+                    {
+                        int ele = stack1.top();
+                        stack1.pop();
+                        if(ele%cur == 0)
+                        {
+                            stack2.push(ele);
+                        }
+                        else
+                        {
+                            stack3.push(ele);
+                        }
+                    }
+                    while(!stack2.empty())
+                    {
+                        cout<<stack2.top()<<endl;
+                        stack2.pop();
+                    }
+                    stack1 = stack3;
+                    while(!stack3.empty())
+                        stack3.pop();
+                }
+                while(!stack1.empty())
+                {
+                    cout<<stack1.top()<<endl;
+                    stack1.pop();
+                }
+                return 0;
+            }
 
 **ST 20 [CPP LANGUAGE]**
