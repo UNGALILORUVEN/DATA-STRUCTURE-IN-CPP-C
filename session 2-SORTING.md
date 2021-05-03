@@ -280,6 +280,42 @@
     }
 **SORT 8 [CPP LANGUAGE]**
 
+    #include<stdio.h>
+
+    void sort(int a[],int n);
+    int main()
+    {
+      int arr[30], i, x, t;
+      scanf("%d",&t);
+      while(t--)
+      {
+        scanf("%d",&x);
+        for(i=0;i<x;i++)
+        {
+          scanf("%d",&arr[i]);
+        }
+      sort(arr, x);
+      }
+      return 0;
+    }
+    void sort(int a[],int n)
+    {
+      int  i, j, p=0;
+      for(i=0;i<n;i++)
+        {
+          for(j=0;j<n;j++)
+          {
+            if(i!=j)
+            {
+              if(p<(a[i]*a[j]))
+              {
+                p=a[i]*a[j];
+              }
+            }
+          }
+      }
+        printf("%d\n",p);
+    }
 **SORT 9 [CPP LANGUAGE]**
 
 **SORT 10 [CPP LANGUAGE]**
