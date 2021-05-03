@@ -277,8 +277,113 @@
         }
       return 0;
       }
-**ST 7 [CPP LANGUAGE]**
+**ST 7 [C LANGUAGE]**
 
+          #include <stdio.h>
+
+          #include <stdlib.h>
+
+          #include <string.h>
+
+          int top = -1;
+
+          char stack[100];
+
+          void CHECK (char str[ ], int n, char stack [ ]);
+
+          void push(char);
+
+          void pop();
+
+          void find_top();
+
+          int main()
+
+          {
+
+          int i,n;
+
+          scanf("%d",&n);
+
+          char a[n];
+
+          scanf("%s", a);
+
+          for (i = 0;i<n;i++)
+
+          {
+
+          if (a[i] == '(')
+
+          {
+
+          push(a[i]);
+
+          }
+
+          else if (a[i] == ')')
+
+          {
+
+          pop();
+
+          }
+
+          }
+
+          find_top();
+
+          return 0;
+
+          }
+
+          void push(char a)
+
+          {
+
+          stack[top] = a;
+
+          top++;
+
+          }
+
+          void pop()
+
+          {
+
+          if (top == -1)
+
+          {
+
+          printf("String is unbalanced!");
+
+          exit(0);
+
+          }
+
+          else
+
+          {
+
+          top--;
+
+          }
+
+          }
+
+          void find_top()
+
+          {
+
+          if (top == -1)
+
+          printf("String is balanced!");
+
+          else
+
+          printf("String is unbalanced!");
+
+          }
 **ST 8 [C LANGUAGE]**
 
       #include <stdio.h>
