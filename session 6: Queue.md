@@ -585,6 +585,185 @@
 
 **Q 15 [CPP LANGUAGE] LONG AGO IN INDIA....**
 
+        #include <iostream>
+
+        using namespace std;
+
+        int *array;
+
+        void enq_front();
+
+        int insertfront(int [],int );
+
+        void remove(int []);
+
+        void display(int[],int,int);
+
+        const int size=50;
+
+        int queue[size],front=-1,rear=-1;
+
+        int main() {
+
+         int c,x,res;
+
+           do
+
+            {
+
+                 cin>>c;
+
+            switch(c)
+
+             {
+
+                case 1: {
+
+                   cin>>x;
+
+                    res=insertfront(queue,x);
+
+                    break;
+
+                  }
+
+                case 2: {
+
+                   remove(queue);
+
+                    break;
+
+                  }
+
+                case 3: {
+
+                   display(queue,front,rear);
+
+                    break;
+
+                  }
+
+                case 0:
+
+                    exit(0);
+
+                    break;
+
+                default:
+
+                    cout<<"Invalid Input";
+
+             }
+
+            }while(c!=0);
+
+         return 0;
+
+        }
+
+        int insertfront(int queue[],int ele)
+
+        {
+
+           if(rear==-1)
+
+            {
+
+              front=rear=0;
+
+              queue[front]=ele;
+
+            }
+
+         for(int i=rear-1;i>=front;i--)
+
+            {
+
+             queue[i+1]=queue[i];
+
+            }
+
+           rear++;
+
+           queue[front]=ele;
+
+        }
+
+        void remove(int queue[])
+
+        {
+
+           if(front==rear)
+
+               cout<<"Underflow";
+
+          else
+
+            {
+
+               if(front==rear)
+
+                   front=rear=-1;
+
+               else
+
+                   front++;
+
+            }
+
+        }
+
+        void display(int queue[],int front,int rear)
+
+        {
+
+         /*if(front==rear)
+
+               cout<<"Underflow";*/
+
+           for(int i=rear-1;i>=front;i--)
+
+            {
+
+             cout<<queue[i]<<"->";
+
+            }
+
+          cout<<endl;
+
+           //cout<<queue[rear]<<endl;
+
+        }
+
+        void enq_front()
+
+        { int ele;
+
+         cin>>ele;
+
+           if(rear==-1)
+
+            {
+
+              front=rear=0;
+
+              queue[front]=ele;
+
+            }
+
+         for(int i=rear-1;i>=front;i--)
+
+            {
+
+             queue[i+1]=queue[i];
+
+            }
+
+           rear++;
+
+           queue[front]=ele;
+
+        }
 **Q 16 [CPP LANGUAGE]**
 
         #include<bits/stdc++.h>
