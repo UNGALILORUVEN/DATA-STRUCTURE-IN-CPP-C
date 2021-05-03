@@ -761,7 +761,7 @@
                 return 0;
             }
 
-**ST 20 [CPP LANGUAGE]**
+**ST 20 [C LANGUAGE]**
 
             #include <stdio.h>
 
