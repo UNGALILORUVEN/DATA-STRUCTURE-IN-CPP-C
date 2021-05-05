@@ -793,4 +793,27 @@
 
 **TRE 22 [CPP LANGUAGE]**
 
-**TRE23 [CPP LANGUAGE]**
+**TRE 23 [CPP LANGUAGE]**
+
+    #include <bits/stdc++.h>
+
+    using namespace std;
+
+    int main()
+    {
+      int t;
+      cin>>t;
+      while(t-- > 0)
+      {
+        int v,e;
+        cin>>v>>e;
+        for(int i = 0;i<e;i++)
+        {
+          int x,y;
+          cin>>x>>y;
+        }
+        v = v-1;
+        cout<<v<<endl;
+      }
+      return 0;
+    }
