@@ -383,7 +383,7 @@
         }
         flag=1;
       }
-**LL 7 [CPP LANGUAGE]**
+**LL 7 [CPP LANGUAGE] PROFESSOR MANIKANDAN GIVES A TASK....**
 
     #include <iostream>
     using namespace std;
@@ -447,8 +447,7 @@
      cin>>d;
       ob.print(n,d);
     return 0;
-    }
-    
+    }  
 **LL 8 [CPP LANGUAGE] PROFESSOR SARAVANAN DECIDED....**
 
             #include<iostream>
@@ -629,7 +628,7 @@
           }
           return 0;
       }
-**LL 11 [CPP LANGUAGE]**
+**LL 11 [CPP LANGUAGE] PROFESSOR SARAVANAN DECIDED TO....**
 
       #include <iostream>
       using namespace std;
@@ -664,7 +663,7 @@
       }
 **LL 12 [CPP LANGUAGE] ONCE UPON A TIME....**
 
-**LL 13 [CPP LANGUAGE]**
+**LL 13 [CPP LANGUAGE] ONCE UPON A TIME A PLUMP.....**
 
     #include<iostream>
     using namespace std;
@@ -1071,7 +1070,7 @@
           obj.reverse();cout<<" ";
        return 0;
       }
-**LL 19 [C LANGUAGE]**
+**LL 19 [C LANGUAGE] DELLA AND JIM WERE MARRIED....**
 
       #include<stdio.h>
       #include<stdlib.h>
@@ -1208,7 +1207,7 @@
         }
         return 0;
       }
-**LL 21 [CPP LANGUAGE]**
+**LL 21 [CPP LANGUAGE] DELLA AND JIM WERE MARRIED....**
 
       #include <stdio.h>
 
@@ -1293,7 +1292,7 @@
       }
 **LL 24 [CPP LANGUAGE]**
 
-**LL 25 [CPP LANGUAGE]**
+**LL 25 [CPP LANGUAGE] AN OLD MAN LIVING IN ALASKA....**
 
       #include <iostream>
       using namespace std;
