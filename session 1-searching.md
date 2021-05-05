@@ -121,7 +121,7 @@
 
           return 0;
     }
-**SER4[C LANGUAGE]**
+**SER4[C LANGUAGE] THE PROFESSOR IS CONDUCTIONG....**
 
 
 
@@ -387,10 +387,10 @@
      }
       return 0;
     }
-**SER9 [CPP LANGUAGE}**
+**SER9 [CPP LANGUAGE] WORLD CUP TEAM SQUAD...**
 
    
-**SER10 [C LANGUAGE]**
+**SER10 [C LANGUAGE] RAMU IS WATCHING A ......**
 
 
 
@@ -658,7 +658,7 @@
         return 0;
     }
     
-**SER 15 [C LANGUAGE]**
+**SER 15 [C LANGUAGE] ITS BEEN A FEW DAYS...**
 
          #include <stdio.h>
         #include <math.h>
