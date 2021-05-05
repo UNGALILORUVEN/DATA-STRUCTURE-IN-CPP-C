@@ -449,7 +449,7 @@
     return 0;
     }
     
-**LL 8 [CPP LANGUAGE]**
+**LL 8 [CPP LANGUAGE] PROFESSOR SARAVANAN DECIDED....**
 
             #include<iostream>
             using namespace std;
@@ -662,7 +662,7 @@
         }
        return 0;
       }
-**LL 12 [CPP LANGUAGE]**
+**LL 12 [CPP LANGUAGE] ONCE UPON A TIME....**
 
 **LL 13 [CPP LANGUAGE]**
 
@@ -921,7 +921,7 @@
       start->link=t;
     }
  
-**LL 16 [CPP LANGUAGE]**
+**LL 16 [CPP LANGUAGE] LONG AGO IN INDIA...**
 
       #include<iostream>
       using namespace std;
@@ -1159,7 +1159,7 @@
           printList(res);
           return 0;
       }
-**LL 20 [CPP LANGUAGE]**
+**LL 20 [CPP LANGUAGE] A TEACHER CORRECT THE EXAM..**
 
       #include <iostream>
       using namespace std;
@@ -1265,9 +1265,9 @@
           }
           return 0;
       }
-**LL 22 [CPP LANGUAGE]**
+**LL 22 [CPP LANGUAGE] ONCE UPON A TIME THERE...**
 
-**LL 23 [CPP LANGUAGE]**
+**LL 23 [CPP LANGUAGE] ONCE UPON A TIME THERE WAS A PRINCESS...**
 
       #include <bits/stdc++.h>
 
