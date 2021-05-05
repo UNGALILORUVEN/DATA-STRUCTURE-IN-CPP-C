@@ -46,7 +46,7 @@
 
 **TRE 4 [CPP LANGUAGE]**
 
-**TRE 5 [CPP LANGUAGE]**
+**TRE 5 [CPP LANGUAGE]SUDAN DECIDED TO CREATE A TREE...**
 
       #include <iostream>
       using namespace std;
@@ -74,7 +74,7 @@
     cout<<"Largest number: "<<largest;
     return 0;
     }
-**TRE 6 [CPP LANGUAGE]**
+**TRE 6 [CPP LANGUAGE] SARAVANAN DECIDED TO CREATE A TREE AND PRINT THE SMALLEST.......**
 
         #include <iostream>
         using namespace std;
@@ -240,9 +240,9 @@
     }
     return 0;
     }
-**TRE 10 [CPP LANGUAGE]**
+**TRE 10 [CPP LANGUAGE] ONCE SELVESTAR WAS WATCHING A FIGHT....**
 
-**TRE 11 [CPP LANGUAGE]**
+**TRE 11 [CPP LANGUAGE] DYNA IS STANDING AT THE DOOR OF.....**
 
 **TRE 12 [C LANGUAGE]**
 
@@ -348,7 +348,7 @@
     printf("%d ",ans);
     return 0;
     }
-**TRE 13 [CPP LANGUAGE]**
+**TRE 13 [CPP LANGUAGE] SARAVANAN AS ALWAYS HAS BROUGHT A NEW TASK....**
 
     #include<bits/stdc++.h>
     using namespace std;
@@ -419,7 +419,7 @@
     }
 **TRE 14 [CPP LANGUAGE]**
 
-**TRE 15 [CPP LANGUAGE]**
+**TRE 15 [CPP LANGUAGE] SAM'S FAVOURITE GAME IS FOOTBALL....**
 
 **TRE 16 [CPP LANGUAGE]**
 
@@ -519,7 +519,7 @@
      }
     }
     }
-**TRE 17 [CPP LANGUAGE]**
+**TRE 17 [CPP LANGUAGE] JSON ROY IS TRYING TO DEVELOP A WIDGET....**
 
       #include<bits/stdc++.h>
 
@@ -602,7 +602,7 @@
          return 0;
       }
 
-**TRE 19 [CPP LANGUAGE]**
+**TRE 19 [CPP LANGUAGE] JAKE WAS ASKED TO ANSWER....**
 
     #include <iostream>
     #include <unordered_map>
@@ -791,9 +791,9 @@
     }
 **TRE 21 [CPP LANGUAGE]**
 
-**TRE 22 [CPP LANGUAGE]**
+**TRE 22 [CPP LANGUAGE] WHITE TAKING A STROLL IN THE PARK....**
 
-**TRE 23 [CPP LANGUAGE]**
+**TRE 23 [CPP LANGUAGE] LEONARD HAS DECIDED TO QUIT LIVING WITH.....**
 
     #include <bits/stdc++.h>
 
