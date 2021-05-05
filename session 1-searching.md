@@ -1,4 +1,4 @@
-**SER1  [c language]** 
+**SER1  [c language] MADAN NEED TO...** 
 
     #include <stdio.h>
 
@@ -55,7 +55,7 @@
 
       }
 
-**SER2 [cpp language]**
+**SER2 [cpp language] RAMU IS WILLING...**
 
     #include<bits/stdc++.h>
 
@@ -254,7 +254,7 @@
 
     return 0;
            }
-**SER6 [CPP LANGUAGE}**
+**SER6 [CPP LANGUAGE] KAPILDEV MARKETING A...**
 
     #include<iostream>
     using namespace std;
@@ -317,7 +317,7 @@
             findClosest(A, B, C, p, q, r);
             return 0;
     }
-**SER7 [c language]**
+**SER7 [c language] KANNA IS EXTREMELY .....**
 
      #include <stdio.h>
 
@@ -355,6 +355,38 @@
         return 0;
     }
 
+**SER8 [CPP LANUAGE] THE GREAT STAGE OF....**
+
+    #include<iostream>
+    using namespace std;
+
+    int main() {
+     int t,a,temp,f=0;
+     cin>>t;
+
+     for(int i=0;i<t;i++)
+     {
+         cin>>a;
+         f=0;
+         temp=a;
+         while(a)
+             {
+
+                 if(a%100==21)
+                 {cout<<"The streak is broken!"<<endl;f=1;break;}
+                 a=a/10;
+             }
+             if(f==1)continue;
+         if(temp%21==0)
+         {
+             cout<<"The streak is broken!"<<endl;
+         }
+
+         else
+             cout<<"The streak lives still in our heart!"<<endl;
+     }
+      return 0;
+    }
 **SER9 [CPP LANGUAGE}**
 
    
@@ -442,7 +474,7 @@
          return 0;
         }
 
-**SER12[C LANGUAGE]**
+**SER12[C LANGUAGE] THERE IS A CLASSROOM ....**
 
      #include <stdio.h>
     int main() {
@@ -485,7 +517,7 @@
         printf("%d",n-ans);
         return 0;
     }
-**SER13 [CPP LANGUAGE}**
+**SER13 [CPP LANGUAGE] BIG CHANDRAN IS A...**
 
         #include <iostream>
         using namespace std;
@@ -524,7 +556,7 @@
  
     return 0;
     }
-**SER14 [C LANGUAGE]**
+**SER14 [C LANGUAGE] YOU ARE GIVEN N TRIANGLE...**
 
     #include<stdio.h>
     void swap(long long int *a, long long int *b)
