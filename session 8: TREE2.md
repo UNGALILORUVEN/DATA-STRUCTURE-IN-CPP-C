@@ -1,4 +1,4 @@
-**TRE 1 [CPP LANGUAGE]**
+**TRE 1 [CPP LANGUAGE] SARAVAN DECIDED TO MAKE A....**
 
              #include <iostream>
             using namespace std;
@@ -40,9 +40,9 @@
                 return 0;
             }
 
-**TRE 2 [CPP LANGUAGE]**
+**TRE 2 [CPP LANGUAGE] SARAVANAN DECIDED TO MAKE A TREE AND PRINT.....**
 
-**TRE 3 [CPP LANGUAGE]**
+**TRE 3 [CPP LANGUAGE] MANIKANDAN DECIDED TO MAKE A TREE....**
 
 **TRE 4 [CPP LANGUAGE]**
 
@@ -417,11 +417,11 @@
         //cout<<s;
         return 0;
     }
-**TRE 14 [CPP LANGUAGE]**
+**TRE 14 [CPP LANGUAGE] GIVEN A COMPLETE BINARY TREE WITH N ......**
 
 **TRE 15 [CPP LANGUAGE] SAM'S FAVOURITE GAME IS FOOTBALL....**
 
-**TRE 16 [CPP LANGUAGE]**
+**TRE 16 [CPP LANGUAGE] THE KING OF GHOSTS IS REALLY DISAPPOINTED WHEN...**
 
     #include<bits/stdc++.h>
 
@@ -789,7 +789,7 @@
      }
     return 0;
     }
-**TRE 21 [CPP LANGUAGE]**
+**TRE 21 [CPP LANGUAGE] MICHAEL HIGH ON EXCITEMENT AFTER SOLVING THE REST.....**
 
 **TRE 22 [CPP LANGUAGE] WHITE TAKING A STROLL IN THE PARK....**
 
