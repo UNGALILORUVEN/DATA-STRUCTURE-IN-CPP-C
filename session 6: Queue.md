@@ -46,7 +46,7 @@
     }
     return 0;
     }
-**Q 2 [CPP LANGUAGE]**
+**Q 2 [CPP LANGUAGE] AN MAN LIVING IN ALASKA.....**
 
         #include <iostream>
         using namespace std;
@@ -272,9 +272,9 @@
         while(choice != 0);
         return 0;
     }
-**Q 4 [CPP LANGUAGE]**
+**Q 4 [CPP LANGUAGE] THERE ONCE LIVED A MILLER...**
 
-**Q 5 [CPP LANGUAGE]**
+**Q 5 [CPP LANGUAGE] THERE ONCE LIVED A MILLER....**
 
 **Q 6 [CPP LANGUAGE]**
 
@@ -346,9 +346,9 @@
     }
     return 0;
     }
-**Q 7 [CPP LANGUAGE]**
+**Q 7 [CPP LANGUAGE] LONG AGO IN ENGLAND A WISE....**
 
-**Q 8 [CPP LANGUAGE]**
+**Q 8 [CPP LANGUAGE] THERE ARE 'N' PEOPLE STANDING....**
 
     #include<bits/stdc++.h>
     using namespace std;
@@ -511,7 +511,7 @@
 
     return 0;
     }
-**Q 11 [CPP LANGUAGE]**
+**Q 11 [CPP LANGUAGE] JOHN IS PREPAREING FOR....**
 
     #include <iostream>
     #include <queue>
@@ -764,7 +764,7 @@
            queue[front]=ele;
 
         }
-**Q 16 [CPP LANGUAGE]**
+**Q 16 [CPP LANGUAGE] LONG AGO IN INDIA THERE....**
 
         #include<bits/stdc++.h>
         #include<iostream>
@@ -972,7 +972,7 @@
     }
 **Q 18 [CPP LANGUAGE]**
 
-**Q 19 [CPP LANGUAGE]**
+**Q 19 [CPP LANGUAGE]GIVEN A BINARY TREE AS....**
 
     
 **Q 20 [CPP LANGUAGE]**
