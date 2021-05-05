@@ -1,6 +1,6 @@
 **AR 1 [CPP LANGUAGE]**
 
-**AR 2 [C LANGUAGE]**
+**AR 2 [C LANGUAGE] KAPIL DEV ORGANIZED A.....**
 
       #include <stdio.h>
       int main()
@@ -18,9 +18,9 @@
           }
           return 0;
       }
-**AR 3 [CPP LANGUAGE]**
+**AR 3 [CPP LANGUAGE] RAMAR PLANED TO WRITE....**
 
-**AR 4 [CPP LANGUAGE]**
+**AR 4 [CPP LANGUAGE] CREATE A LIST SEQLIST...**
 
       #include <cmath>
 
@@ -61,8 +61,7 @@
             }
             return 0;
       }
-**AR 5 [CPP LANGUAGE]**
-SONA MADE SUM.....
+**AR 5 [CPP LANGUAGE] SONA MADE SUM.....**
     
     #include <iostream>
     using namespace std;
@@ -96,8 +95,8 @@ SONA MADE SUM.....
 
         return 0;
       }
- **AR 5 [C LANGUAGE]**
- RAMU AND SOMU SUM......
+ **AR 5 [C LANGUAGE] RAMU AND SOMU SUM......**
+ 
  
       #include <stdio.h>
       int main() {
@@ -127,7 +126,7 @@ SONA MADE SUM.....
           printf("%.1f",mean);
           return 0;
         }
- **AR 6 [CPP LANGUAGE]**
+ **AR 6 [CPP LANGUAGE] A MOUSE AND A FROG ......**
 
     #include <iostream>
 
@@ -157,10 +156,10 @@ SONA MADE SUM.....
         }
       return 0;
       }
-**AR 7 [CPP LANGUAGE]**
+**AR 7 [CPP LANGUAGE] THE KINGDOM OF VIJAYGATH...**
 
 
-**AR 8 [C LANGUAGE]**
+**AR 8 [C LANGUAGE] ONCE UPON A TIME IN A.... **
 
       #include <stdio.h>
       int main()
@@ -195,7 +194,7 @@ SONA MADE SUM.....
 
        return 0;
       }
-**AR 9 [C LANGUAGE]**
+**AR 9 [C LANGUAGE] THERE ONCE WAS A SHEPHERD...**
 
       #include <stdio.h>
     #include <string.h>
@@ -235,7 +234,7 @@ SONA MADE SUM.....
        }
 **AR 10 [CPP LANGUAGE]**
 
-**AR 11 [CPP LANGUAGE]**
+**AR 11 [CPP LANGUAGE] PROFESSOR MALAR HAS GIVEN AN ARRAY....**
 
       #include<bits/stdc++.h>
       using namespace std;
@@ -277,7 +276,7 @@ SONA MADE SUM.....
         cout << maxSum(a, n, k);
       return 0;
     }
-**AR 12 [C LANGUAGE]**
+**AR 12 [C LANGUAGE] RAMAR HAS A PLAN...**
 
     #include<stdio.h> 
     int main() {
@@ -293,7 +292,7 @@ SONA MADE SUM.....
     printf("%d",n);
     return 0;
     }
-**AR 13 [C LANGUAGE]**
+**AR 13 [C LANGUAGE] SARAVANAN DECIDED TO PLAY A.....**
 
     #include<stdio.h>
     float findMean(int arr[], int N)
@@ -318,7 +317,7 @@ SONA MADE SUM.....
     printf("%.2f", findMean(arr, n));
      return 0;
     }
-**AR 14 [CPP LANGUAGE]**
+**AR 14 [CPP LANGUAGE] MANIKANDAN PREPARES FOR GATE EXAM...**
 
             #include <iostream>
             using namespace std;
@@ -356,7 +355,7 @@ SONA MADE SUM.....
             }
 
 
-**AR 15 [CPP LANGUAGE]**
+**AR 15 [CPP LANGUAGE] RAMAR HAS A SET OF NUMBERS....**
 
     #include <iostream>
     #include <bits/stdc++.h>
@@ -383,7 +382,7 @@ SONA MADE SUM.....
       for(i=0;i<n1+n2;i++)
       cout<<c[i]<<" ";
     }
-**AR 16 [CPP LANGUAGE]**
+**AR 16 [CPP LANGUAGE] GIVEN AN UNSORTED ARRAY.....**
 
       #include <iostream>
       using namespace std;
