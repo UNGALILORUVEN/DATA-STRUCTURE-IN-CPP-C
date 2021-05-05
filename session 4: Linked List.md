@@ -287,6 +287,102 @@
 
 **LL 6 [CPP LANGUAGE]**
 
+      #include<iostream>
+      #include<malloc.h>
+      using namespace std;
+      int Create();
+      void deleteNode(struct Node **, struct Node *);
+      void disp();
+      void disp1();
+
+      int flag=0;
+      struct Node
+      {
+        int data;
+        struct Node *link;
+      }*start;
+      int Create();
+      void del();
+      void disp();
+      int main()
+      {
+        int n,i,m;
+        start=NULL;
+        cin>>n;
+        for(i=0;i<n;i++)
+        {
+          Create();
+        }
+        cin>>m;
+        for(i=0;i<m;i++)
+        {
+          deleteNode(&start, start);
+          if(flag==1)
+            break;
+        }
+        if(flag==0)
+        disp();
+        return 0;
+      }
+      int Create()
+      {
+        struct Node *temp,*t;
+        temp=(struct Node*) malloc(sizeof(struct Node));
+        cin>>temp->data;
+        temp->link=NULL;
+        if(start==NULL)
+        {
+          start=temp;
+        }
+        else
+        {
+          t=start;
+          while(t->link!=NULL)
+           t=t->link;
+          t->link=temp;
+        }
+
+      }
+      void deleteNode(struct Node **head_ref, struct Node *n)
+      {
+        if(start == n) 
+          { 
+              if(start->link == NULL) 
+              { 
+                 disp1();
+                  return; 
+              } 
+                start->data = start->link->data; 
+                n = start->link; 
+                start->link = start->link->link;   
+              free(n); 
+
+              return; 
+          } 
+      }
+      void disp()
+      {
+        struct Node *t;
+        t=start;
+        cout<<"Linked List : ";
+        while(t!=NULL)
+        {
+          cout<<"->"<<t->data;
+          t=t->link;
+        }
+      }
+      void disp1()
+      {
+        struct Node *t;
+        t=start;
+        cout<<"Linked List : ";
+        while(t->link!=NULL)
+        {
+          cout<<"->"<<t->data;
+          t=t->link;
+        }
+        flag=1;
+      }
 **LL 7 [CPP LANGUAGE]**
 
     #include <iostream>
