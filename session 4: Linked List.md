@@ -890,6 +890,93 @@
 
 **LL 18 [CPP LANGUAGE]**
 
+      #include <iostream>
+      using namespace std;
+
+        struct node
+        {
+           int num;
+           node *ptr;
+           node *prev;
+        };
+      struct node* new_node =(struct node*) malloc(sizeof(struct node));
+        class sll{
+
+               node * start;
+               public:
+               sll()
+               {
+                  start = NULL;
+               }
+               void add()
+               {
+                  node * temp = new node;
+                  cin>> temp->num;
+                  temp->ptr = NULL;
+                  if(start == NULL)
+                  {
+
+                        start = temp;
+                        start->prev=NULL;
+                  }
+                  else
+                  {
+                      node * temp2 = start;
+                      while(temp2->ptr!=NULL)
+                      {
+                          temp2= temp2->ptr;
+                      }
+                       temp2->ptr = temp;
+                       temp->prev = temp2;
+                  }
+
+               }
+
+              void show()
+              {
+
+                   node *temp =start;
+                   while(temp!=NULL)
+                   {
+                      cout<<" "<<temp->num;
+                      temp = temp->ptr;
+                   }
+              }
+              void reverse()
+              {
+
+                      node *temp = start;
+                      while(temp->ptr!=NULL)
+                      {
+                          temp = temp->ptr;
+                      }
+
+                      while(temp!=NULL)
+                      {
+                           cout<<" "<<temp->num;
+                           temp = temp->prev;
+                      }
+              }
+        };
+
+      int main() {
+       int n;
+          cin>>n;
+          sll obj;
+          while(n)
+          {
+              obj.add();
+              n--;
+          }
+
+
+          cout<<"Linked list :";
+          obj.show();
+        cout<<endl;
+        cout<<"Reversed Linked list :";
+          obj.reverse();cout<<" ";
+       return 0;
+      }
 **LL 19 [C LANGUAGE]**
 
       #include<stdio.h>
