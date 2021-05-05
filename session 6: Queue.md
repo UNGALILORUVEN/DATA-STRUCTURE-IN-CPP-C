@@ -1,4 +1,4 @@
-**Q 1 [CPP LANGUAGE]**
+**Q 1 [CPP LANGUAGE] ONCE UPON A TIME THERE WAS A .....**
 
     #include<iostream>
     using namespace std;
@@ -135,7 +135,7 @@
         }
 
 
-**Q 3 [CPP LANGUAGE]**
+**Q 3 [CPP LANGUAGE] ONE DAY LONG AGO IN INDIA....**
 
     #include <iostream>
     #define MAX 5
@@ -276,7 +276,7 @@
 
 **Q 5 [CPP LANGUAGE] THERE ONCE LIVED A MILLER....**
 
-**Q 6 [CPP LANGUAGE]**
+**Q 6 [CPP LANGUAGE] LONG AGO IN ENGLAND A WISE....**
 
     #include <iostream>
     using namespace std;
@@ -446,7 +446,7 @@
           }
         } 
 
-**Q 10 [C LANGUAGE]**
+**Q 10 [C LANGUAGE] SUPPOSE THERE IS A CIRCLE THERE ARE....**
 
     #include <stdio.h>
 
@@ -577,7 +577,7 @@
 
       return 0;
     }
-**Q 13 [CPP LANGUAGE]**
+**Q 13 [CPP LANGUAGE]A QUEUE IS AN ABSTRACT DATA TYPE THAT.....**
 
 **Q 14 [CPP LANGUAGE]**
 
@@ -923,7 +923,7 @@
             return 0;
         }
 
-**Q 17 [CPP LANGUAGE]**
+**Q 17 [CPP LANGUAGE] RAM AND SHAM WERE IN A FIGHT....**
 
     #include <iostream>
     #include <deque>
@@ -970,12 +970,12 @@
     cout<<SumOfKsubArray(arr,n,k) ;
     return 0;
     }
-**Q 18 [CPP LANGUAGE]**
+**Q 18 [CPP LANGUAGE] GIVEN A BINARY TREE AS PRE-ORDER...**
 
 **Q 19 [CPP LANGUAGE]GIVEN A BINARY TREE AS....**
 
     
-**Q 20 [CPP LANGUAGE]**
+**Q 20 [CPP LANGUAGE]GIVEN A HISTORY MATRIX OF 3.....**
 
     #include<bits/stdc++.h>
     #define MAXIMUM 500
