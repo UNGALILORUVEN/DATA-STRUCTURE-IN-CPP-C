@@ -801,6 +801,109 @@
 
 **ST 14 [CPP LANGUAGE]**
 
+          #include <iostream>
+          using namespace std;
+          void DELETE();
+          struct MYStack
+          {
+           int info;
+             MYStack *next;
+          }*top,*newptr,*save,*ptr;
+          MYStack *Newnode(int);
+          void push(MYStack*);
+          void *createMyStack();
+          void delet();
+          void display(MYStack*);
+          void PUSH1()
+          {}
+          void POP()
+          {}
+          const int size=50;
+          int x,n=100;
+          int main() {
+           int c,v;
+             top=NULL;
+             char ch='y';
+             cin>>v;
+             newptr=Newnode(v);
+              push(newptr);
+             while(ch=='y' || ch=='Y')
+              {
+                 cin>>c;
+                 switch(c)
+                  {
+                   case 1: { 
+                         cin>>x;
+                         newptr=Newnode(x);
+                     push(newptr);
+                         break;
+                      }
+                    case 2: {
+                       delet();
+                         break;
+                      }
+                    case 3: {
+                         display(top);
+                         break;
+                       }
+                      default: {
+                         cout<<"Invalid Choice"<<endl;
+                         }  
+                  }
+                 cin>>ch;
+              }
+           return 0;
+          }
+
+          MYStack *Newnode(int n)
+          {
+           ptr=new MYStack;
+             ptr->info=n;
+             ptr->next=NULL;
+             return ptr;
+          }
+
+          void push(MYStack *np)
+          {
+           if(top==NULL)
+                 top=np;
+             else
+              {
+               save=top;
+                 top=np;
+                 np->next=save;
+              }
+          }
+
+          void delet()
+          {
+           if(top==NULL)
+                 cout<<"UNDERFLOW";
+             else
+              {
+               cout<<"deleted element is "<<top->info<<endl;
+                 ptr=top;
+                 top=top->next;
+                 delete ptr;
+              }
+          }
+
+          void display(MYStack *np)
+          {
+           if(top==NULL)
+                 cout<<"Underflow";
+             else
+              {
+              cout<<"status of the stack is"<<endl;
+              while(np!=NULL)
+               {
+                cout<<np->info<<"->";
+                  np=np->next;
+               }
+              cout<<"!\n";
+              }
+          }
+
 **ST 15 [CPP LANGUAGE]**
 
       #include <iostream>
