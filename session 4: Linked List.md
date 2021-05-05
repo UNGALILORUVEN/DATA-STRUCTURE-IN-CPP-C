@@ -1,4 +1,4 @@
-**LL 1 [CPP LANGUAGE]**
+**LL 1 [CPP LANGUAGE] PROFESSOR MADAN GIVES A TASK....**
 
       #include <iostream>
       using namespace std;
@@ -51,7 +51,7 @@
     push();
     return 0;
     }
-**LL 2 [CPP LANGUAGE]**
+**LL 2 [CPP LANGUAGE] PROFESSOR MADAN GIVES A TASK....**
 
             #include <iostream>
             #include <cstdlib>
@@ -174,7 +174,7 @@
         print(temp);
         return 0;
       }
-**LL 4 [CPP LANGUAGE]**
+**LL 4 [C LANGUAGE] PROFESSOR SARAVANAN TRY TO TEST THE.....**
 
             #include <stdio.h>
             #include<stdlib.h>
@@ -283,9 +283,9 @@
             }
 
 
-**LL 5 [CPP LANGUAGE]**
+**LL 5 [CPP LANGUAGE] PROFESSOR MANIKANDAN GIVES A......**
 
-**LL 6 [CPP LANGUAGE]**
+**LL 6 [CPP LANGUAGE] PROFESSOR SIVA GIVES A TASK....**
 
       #include<iostream>
       #include<malloc.h>
@@ -715,7 +715,7 @@
     cout<<"No";
     return 0;
     }
-**LL 14 [CPP LANGUAGE]**
+**LL 14 [CPP LANGUAGE] ONCE UPON A TIME A PLUMP.....**
 
       #include <bits/stdc++.h>
       using namespace std;
@@ -980,11 +980,9 @@
         cout<<"The middle element is ["<<temp->data<<"]";
         return 0;
       }
-**LL 17 [CPP LANGUAGE]**
-   
-   
+**LL 17 [CPP LANGUAGE] LONG AGO IN INDIA THERE..**
 
-**LL 18 [CPP LANGUAGE]**
+**LL 18 [CPP LANGUAGE] DELLA AND JIM WERE MARRIED....**
 
       #include <iostream>
       using namespace std;
