@@ -296,8 +296,8 @@
 
 **ST 6 [CPP LANGUAGE]**
 
-          
           #include<iostream>
+
           using namespace std;
 
           char pop();
