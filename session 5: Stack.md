@@ -137,7 +137,7 @@
 
 **ST 2 [CPP LANGUAGE] AN MAN LIVING IN ALASKA WAS....**
 
-**ST 3 [CPP LANGUAGE]**
+**ST 3 [CPP LANGUAGE] ONE DAY LONG AGO IN INDIA....**
 
             #include <iostream>
             using namespace std;
@@ -240,6 +240,7 @@
             }
 
 **ST 4 [C LANGUAGE] NOTE : ST 4 IS WRONG IN QUESTION (SECOND TEST CASE OUTPUT) SO YOU JUST COPY THIS CODE AND RUN... AND THEN INFORM TO OUR RESPECTIVE STAFFS (SAY THAT LOGIC ERROR IN TEST CASE 2)**
+THE DIRECTOR OF ENGINEERING COLLEGE DECIDED......
 
           #include <stdio.h>
 
@@ -588,7 +589,7 @@
                 infixToPostfix(exp);
                 return 0;
             }
-**ST 10 [CPP LANGUAGE]**
+**ST 10 [CPP LANGUAGE] THERE WAS A POOR FATHER WHO....**
 
       #include <iostream>
       #include <string>
@@ -679,7 +680,7 @@
     }
 **ST 12 [CPP LANGUAGE] LONG TIME AGO. PEOPLE WHO LIVED IN.....**
 
-**ST 13 [C LANGUAGE]**
+**ST 13 [C LANGUAGE] LONG TIME AGO. PEOPLE WHO LIVED......**
 
             #include<stdio.h>
             #include<stdlib.h>
@@ -1002,7 +1003,7 @@
               inOrder(root);
               return 0;
           }
-**ST 17 [CPP LANGUAGE]**
+**ST 17 [CPP LANGUAGE] LONG AGO IN INDIA THERE.....**
 
 **ST 18 [CPP LANGUAGE]**
 
@@ -1073,7 +1074,7 @@
                 return 0;
             }
 
-**ST 20 [C LANGUAGE]**
+**ST 20 [C LANGUAGE] DELIA AND JIM WERE MARRIED....**
 
           #include <stdio.h>
 
