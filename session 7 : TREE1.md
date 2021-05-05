@@ -1,4 +1,4 @@
-**TR 1 [CPP LANGUAGE]**
+**TR 1 [CPP LANGUAGE] THE SAM IS ENJOYING A WONDERFUL VACATION....**
 
     #include <iostream>
     #include <cstdio>
@@ -184,7 +184,7 @@
     solve();
     return 0;
     }
-**TR 2 [CPP LANGUAGE]**
+**TR 2 [CPP LANGUAGE] THERE ARE STUDENTS N AND M.....**
 
     #include<bits/stdc++.h>
     //void MERG(int x,int y)
@@ -224,7 +224,7 @@
       }
 **TR 3 [CPP LANGUAGE]**
 
-**TR 4 [CPP LANGUAGE]**
+**TR 4 [CPP LANGUAGE] MADURAI IS A TOWN THAT STARTED....**
 
       #include<bits/stdc++.h>
     #define max 100001
@@ -354,9 +354,9 @@
    
     return 0;
     }
-**TR 6 [CPP LANGUAGE]**
+**TR 6 [CPP LANGUAGE] MARIAPPAN WILL BE ORGANIZING A PARTY....**
 
-**TR 7 [CPP LANGUAGE]**
+**TR 7 [CPP LANGUAGE] MANIKANDAN LOVES  MATHS AND IS.....**
 
 **TR 8 [CPP LANGUAGE]**
 
@@ -496,7 +496,7 @@
 
     return 0;
     }
-**TR 10 [CPP LANGUAGE]**
+**TR 10 [CPP LANGUAGE] SARAN'S SON SAURABH WAS...**
 
     #include <bits/stdc++.h>
 
@@ -608,7 +608,7 @@
       cout<<"while(M--)";
     return 0;
     }
-**TR 12 [CPP LANGUAGE]**
+**TR 12 [CPP LANGUAGE] MONEY MONEY MONEY I WANT....**
 
       #include<bits/stdc++.h>
     using namespace std;
@@ -676,7 +676,7 @@
     }
    
     }
-**TR 13 [CPP LANGUAGE]**
+**TR 13 [CPP LANGUAGE] AMIT HAS RECENTLY CREATED....**
 
       #include <iostream>
       using namespace std;
@@ -697,13 +697,13 @@
     else
     cout<<"11";
     }
-**TR 14 [CPP LANGUAGE]**
+**TR 14 [CPP LANGUAGE] HE WANT OVER TO THE GRAPH-MARKING....**
 
-**TR 15 [CPP LANGUAGE]**
+**TR 15 [CPP LANGUAGE] THE SARAN WANTS TO BUY SOME CITIES TO.....**
 
-**TR 16 [CPP LANGUAGE]**
+**TR 16 [CPP LANGUAGE] SRAN ONCE WENT TO THE GRAPH CITY TO....**
 
-**TR 17 [CPP LANGUAGE]**
+**TR 17 [CPP LANGUAGE] SARAN HAS RECENTLY PUT ON SOME.....**
 
     #include <bits/stdc++.h>
     using namespace std;
@@ -739,11 +739,11 @@
     cout<<ans/2<<endl;
     return 0;
     }
-**TR 18 [CPP LANGUAGE]**
+**TR 18 [CPP LANGUAGE] IT'S APRIL FOOLS' DAY 2017.....**
 
 **TR 19 [CPP LANGUAGE]**
 
-**TR 20 [CPP LANGUAGE]**
+**TR 20 [CPP LANGUAGE] KING SULTAN JUST APPOINTED MORON AS....**
 
       #include<bits/stdc++.h>
     using namespace std;
