@@ -202,8 +202,7 @@
       }
 **AR 7 [CPP LANGUAGE] THE KINGDOM OF VIJAYGATH...**
 
-
-**AR 8 [C LANGUAGE] ONCE UPON A TIME IN A.... **
+**AR 8 [C LANGUAGE] ONCE UPON A TIME IN A....**
 
       #include <stdio.h>
       int main()
