@@ -296,15 +296,14 @@
 
 **ST 6 [CPP LANGUAGE]**
 
-       #include<iostream>
-       using namespace std;
-       char pop();
-       void push(char);
+    #include<iostream>
+    using namespace std;
+    char pop();
+    void push(char);
           int main()
           {
           int i,j,len,flag=1;
           char a[20];
-
           //cout<<"Enter a string:";
           cin>>a;
           for(len=0;a[len]!='\0';++len);
