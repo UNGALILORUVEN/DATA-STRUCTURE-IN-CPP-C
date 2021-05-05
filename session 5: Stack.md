@@ -296,11 +296,10 @@
 
 **ST 6 [CPP LANGUAGE]**
 
-          #include<iostream>
-          using namespace std;
-          char pop();
-          void push(char);
-
+       #include<iostream>
+       using namespace std;
+       char pop();
+       void push(char);
           int main()
           {
           int i,j,len,flag=1;
