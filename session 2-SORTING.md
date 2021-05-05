@@ -1,4 +1,4 @@
-**SORT 1 [CPP LANGUAGE]**
+**SORT 1 [CPP LANGUAGE] YOU ARE GIVEN AN....**
 
     #include<bits/stdc++.h>
     using namespace std;
@@ -47,7 +47,7 @@
     }
     return 0;
     }
-**SORT 2 [CPP LANGUAGE]**
+**SORT 2 [CPP LANGUAGE] SORT THE GIVEN SET....**
 
         #include <iostream>
         using namespace std;
@@ -87,7 +87,7 @@
 
 **SORT 3 [CPP LANGUAGE]**
 
-**SORT 4 [CPP LANGUAGE]**
+**SORT 4 [CPP LANGUAGE] RAMU AND SOMU BOTH....**
 
     #include<stdio.h>
     void printArray(int arr[], int n)
@@ -135,7 +135,7 @@
         printArray(data, n);
         return 0;
         }
-**SORT 5 [CPP LANGUAGE]**
+**SORT 5 [CPP LANGUAGE] KALAISELVAN IS GOING TO....**
 
         #include <stdio.h>
         void sort(int a[],int n,int k);
@@ -179,7 +179,7 @@
         }
 
 
-**SORT 6 [CPP LANGUAGE]**
+**SORT 6 [CPP LANGUAGE] MS DHONI WANT TO PLAY....**
 
     #include <iostream>
     using namespace std;
@@ -217,7 +217,7 @@
  
         return 0;
       }
-**SORT 7 [C LANGUAGE]**
+**SORT 7 [C LANGUAGE] GIVEN TWO ARRAY A AND B.....**
 
     #include <stdio.h>
     void result(int a[],int b[],int n);
@@ -278,7 +278,7 @@
         }
         printf("%d\n",sum);
     }
-**SORT 8 [CPP LANGUAGE]**
+**SORT 8 [C LANGUAGE]**
 
     #include<stdio.h>
 
@@ -316,7 +316,7 @@
       }
         printf("%d\n",p);
     }
-**SORT 9 [CPP LANGUAGE]**
+**SORT 9 [CPP LANGUAGE] GIVEN AN ARRAY OF....**
 
     #include<bits/stdc++.h>
     using namespace std;
@@ -354,7 +354,7 @@
       }
      return 0;
     }
-**SORT 10 [CPP LANGUAGE]**
+**SORT 10 [CPP LANGUAGE] LALU WANTED TP PURCHASE....**
 
         #include<iostream>
         using namespace std;
@@ -413,7 +413,7 @@
         }
 
 
-**SORT 11 [C LANGUAGE]**
+**SORT 11 [C LANGUAGE] IN A CANDY STORE THERE...**
 
     #include <stdio.h>
     static void mergeSort(int a[],int l,int r)
@@ -448,7 +448,7 @@
     printf("%d\n",max);}
     return 0;
     }
-**SORT 12 [CPP LANGUAGE]**
+**SORT 12 [CPP LANGUAGE] GIVEN AN ARRAY OF ....**
 
     #include<iostream>
     #include<algorithm>
@@ -500,7 +500,7 @@
         }
         return 0;
         }
-**SORT 13 [CPP LANGUAGE]**
+**SORT 13 [CPP LANGUAGE] YOU HAVE TO MERGE....**
 
     #include <iostream>
     using namespace std;
@@ -544,7 +544,7 @@
         }
         return 0;
       }
-**SORT 14 [C LANGUAGE]**`
+**SORT 14 [C LANGUAGE] MOMMY IS A VERY ACTIVE LADY....**`
 
     #include<stdio.h>
     int main()
