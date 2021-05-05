@@ -85,7 +85,56 @@
          return 0;
         }
 
-**SORT 3 [CPP LANGUAGE]**
+**SORT 3 [C LANGUAGE] SORT THE GIVEN SET OF.....**
+
+        #include <stdio.h>
+
+        void swap(int *xp, int *yp)
+        {
+        int temp = *xp;
+        *xp = *yp;
+        *yp = temp;
+        }
+
+
+        void bubbleSort(int arr[], int n)
+        {
+        int i, j;int a,b;
+        for (i = 0; i < n-1; i++) 
+        {
+          a=i;
+          if(a==3){for (a=0; a< n; a++)
+        printf("%d ", arr[a]);
+        printf("\n"); }
+
+
+        for (j = 0; j < n-i-1; j++)
+        if (arr[j] > arr[j+1])
+        swap(&arr[j], &arr[j+1]);
+        }
+        }
+
+        void printArray(int arr[], int size)
+        {
+        int i;
+        for (i=0; i < size; i++)
+        printf("%d ", arr[i]);
+        printf("\n");
+        }
+
+
+        int main()
+        {
+        int t;scanf("%d",&t);
+         int i;int arr[t];
+         for(i=0;i<t;i++)
+         {  scanf("%d",&arr[i]);}
+        int n = sizeof(arr)/sizeof(arr[0]);
+        bubbleSort(arr, n);
+        printf("Sorted array:");
+        printArray(arr, n);
+        return 0;
+        }
 
 **SORT 4 [CPP LANGUAGE] RAMU AND SOMU BOTH....**
 
@@ -278,7 +327,7 @@
         }
         printf("%d\n",sum);
     }
-**SORT 8 [C LANGUAGE]**
+**SORT 8 [C LANGUAGE] given an array with.....**
 
     #include<stdio.h>
 
@@ -544,11 +593,11 @@
         }
         return 0;
       }
-**SORT 14 [C LANGUAGE] MOMMY IS A VERY ACTIVE LADY....**`
+**SORT 14 [C LANGUAGE] MOMMY IS A VERY ACTIVE LADY....**
 
-    #include<stdio.h>
-    int main()
-    {
+        #include<stdio.h>
+        int main()
+        {
         int a[1001];
         int n,i,j,t,swap,temp,k,m,ss,r;
         scanf("%d", &t);
@@ -583,3 +632,6 @@
                 return 0;
             }
             }
+**SORT 15 [C LANUAGE] GIVEN AN ARRAY OF DISTINCT POSITIVE....**
+
+        
