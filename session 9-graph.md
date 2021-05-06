@@ -1,4 +1,4 @@
-**GR 1 [CPP LANGUAGE]**
+**GR 1 [CPP LANGUAGE] GIVEN AN UNSTORED ARRAY WITH REPETITIONS....**
 
      #include <iostream>
      using namespace std;
@@ -37,7 +37,7 @@
       groupElements(arr, n);
       return 0;
      }
-**GR 2 [CPP LANGUAGE]**
+**GR 2 [CPP LANGUAGE] GIVEN A BIDIRECTIONAL GRAPH .......**
 
      #include <iostream>
      using namespace std;
@@ -53,7 +53,7 @@
      cout<<" Adjacency list of vertex 4\n head "<<endl;
      return 0;
      }
-**GR 3 [C LANGUAGE]**
+**GR 3 [C LANGUAGE] GIVEN GRAPH, WHETHER....**
 
      #include <stdio.h>
     int main()
@@ -69,7 +69,7 @@
      return 0;
     }
 
-**GR 4 [CPP LANGUAGE]**
+**GR 4 [CPP LANGUAGE] GIVEN A DIRECTED GRAPH......**
 
     #include <iostream>
     using namespace std;
@@ -86,7 +86,7 @@
 **GR 5 [CPP LANGUAGE]**
 
           
-**GR 6 [C LANGUAGE]**
+**GR 6 [C LANGUAGE] RAJA SIGH IS A PROFESSIONAL ASKED.....**
 
      #include <stdio.h>
 
@@ -133,7 +133,7 @@
         return 0;
     }
 
-**GR 7 [C LANGUAGE]**
+**GR 7 [C LANGUAGE] SRM UNIVERSITY CONDUCTING....**
 
     #include<stdio.h>
 
@@ -169,7 +169,7 @@
                 DFS(j);
     }
 
-**GR 8 [CPP LANGUAGE]**
+**GR 8 [CPP LANGUAGE] SAM PLANNED TO WRITE A PROGRAM.....**
 
     #include <iostream>
     #include <vector>
@@ -214,7 +214,7 @@
      return 0;
     }
 
-**GR 9 [CPP LANGUAGE]**
+**GR 9 [CPP LANGUAGE]RAJA HAS A PLAN TO TEACH....**
 
         #include <iostream>
         #include <cstring>
@@ -278,7 +278,7 @@
         }
 
 
-**GR 10 [CPP LANGUAGE]**
+**GR 10 [CPP LANGUAGE] KARTHICK PERFORMS A CRITIAL TASK.....**
 
           #include <iostream>
           #include <vector>
@@ -356,7 +356,7 @@
 **GR 13 [CPP LANGUAGE]**
 
 
-**GR14 [CPP LANGUAGE]**
+**GR 14 [CPP LANGUAGE]**
 
 
 **GR 15 [CPP LANGUAGE]**
@@ -365,7 +365,7 @@
 **GR 16 [CPP LANGUAGE]**
 
 
-**GR 17 [C LANGUAGE]**
+**GR 17 [C LANGUAGE] A GRAPH WHERE ALL VERTICES ARE CONNECTED .......**
 
     #include <stdbool.h>
     #include <stdio.h>
@@ -447,4 +447,4 @@
      return 0;
     }
 
-**GR 18 [CPP LANGUAGE]**
+**GR 18 [CPP LANGUAGE] GIVEN A GRAPH AND A SOURCE.....**
