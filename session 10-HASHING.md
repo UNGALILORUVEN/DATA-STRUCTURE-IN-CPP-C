@@ -30,7 +30,7 @@
 
           }
       }
-**H 2 [CPP LANGUAGE]**
+**H 2 [CPP LANGUAGE] YOU ARE GIVEN A STRING WHICH COMPARISES OF.......**
 
       #include <iostream>
       #include <string.h>
@@ -205,7 +205,7 @@
 
 
 
-**H 9 [CPP LANGUAGE]**
+**H 9 [CPP LANGUAGE] THE MONK IS EXTREMELY FOND OF PRATEEK.....**
 
       #include <iostream>
       #include <cstdio>
@@ -474,7 +474,7 @@
 **H 14 [CPP LANGUAGE] KUNDAN BEING A GOOD FRIEND OF.....**
 
 
-**H 15 [CPP LANGUAGE]**
+**H 15 [CPP LANGUAGE] OUR HACKER, LITTLE STUART LATELY HAS BEEN FASCINATED BY ANICIENT......**
 
 
 **H 16 [CPP LANGUAGE] THE MONK IS EXTEREMLY FOND OF PRATEEK THE.....**
@@ -699,7 +699,7 @@
       }
       return 0;
       }
-**H 22 [CPP LANGUAGE]**
+**H 22 [CPP LANGUAGE] THERE IS A HACKER NAMED "VIJAY" WHO HAS.....**
 
       #include <bits/stdc++.h>
 
