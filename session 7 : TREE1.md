@@ -701,6 +701,59 @@
 
 **TR 15 [CPP LANGUAGE] THE SARAN WANTS TO BUY SOME CITIES TO.....**
 
+    #include<bits/stdc++.h>
+    using namespace std;
+    #define ll long long int
+    typedef long long VARIABLE;
+    int main ()
+    {
+      ios_base::sync_with_stdio (false);
+      cin.tie (0);
+      cout.tie (0);
+
+      int T;
+      cin >> T;
+      if ((1<=T)&&(T<=100))
+        {
+          while (T--)
+        {
+          int E;
+          cin >> E;
+          if ((1<=E)&&(E<=1000))
+            {
+              set < int > s;
+              int X, Y;
+              for (int i = 0; i < E; i++)
+            {
+              cin >> X >> Y;
+              if ((1 <= X) && (Y <= 10000))
+                {
+                  s.insert (X);
+                  s.insert (Y);
+                }
+    else
+    {
+        return 0;
+    }
+            }
+
+              cout << s.size ();
+              cout << "\n";
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        }
+        else
+      {
+          return 0;
+      }
+      return 0;
+    }
+
+
 **TR 16 [CPP LANGUAGE] SRAN ONCE WENT TO THE GRAPH CITY TO....**
 
 **TR 17 [CPP LANGUAGE] SARAN HAS RECENTLY PUT ON SOME.....**
