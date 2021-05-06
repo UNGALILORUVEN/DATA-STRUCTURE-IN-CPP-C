@@ -446,34 +446,6 @@
     
 **SER11[CPP LANGUAGE] THE TASK FOR WRITING THE....**
 
-        #include <iostream>
-        using namespace std;
-        int main()
-        {
-         long long int X[10],t,T1[10],K[10],T2[10],q,s=0;
-            cin>>t;
-            for(int i=0;i<t;i++)
-            {
-              cin>>q;
-              if(q==2)
-              {
-               cin>>K[i]>>T2[i];
-                  for(int j=0;j<i;j++)
-                  {
-                 if((T1[j]>=(T2[i]-K[i]))&&(T1[j]<=T2[i]))
-                   s+=X[j];
-                   }
-                cout<<s<<endl;
-                s=0;
-              }
-              else
-              {
-              cin>>X[i]>>T1[i];
-              }
-            }
-         return 0;
-        }
-
 **SER12[C LANGUAGE] THERE IS A CLASSROOM ....**
 
      #include <stdio.h>
