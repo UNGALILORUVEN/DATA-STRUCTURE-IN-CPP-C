@@ -64,7 +64,7 @@
         cin>>x;
         MaxChar(x);
       }
-**H 3 [CPP LANGUAGE]**
+**H 3 [CPP LANGUAGE] YESTERDAY WHILE OMAR WAS TRYING TO....**
 
                 #include <bits/stdc++.h>
                 using namespace std;
@@ -129,7 +129,7 @@
          }
         }
 
-**H 5 [CPP LANGUAGE]**
+**H 5 [CPP LANGUAGE] XSQUARE LIKES STRINGS A LOT BUT....**
 
       #include <iostream>
 
@@ -157,7 +157,7 @@
         }
         return 0;
       }
-**H 6 [C LANGUAGE]**
+**H 6 [C LANGUAGE] BOB AND KHATU BOTH LOVE THE STRING....**
 
         #include <iostream>
         #include<string.h>
@@ -201,7 +201,7 @@
 **H 7 [CPP LANGUAGE]**
 
 
-**H 8 [CPP LANGUAGE]**
+**H 8 [CPP LANGUAGE] ANDI AND BOB WERE FRIENDS SINCE CHILDHOOD.....**
 
 
 
@@ -379,7 +379,7 @@
               cout << c << endl;
           }
       }
-**H 12 [CPP LANGUAGE]**
+**H 12 [CPP LANGUAGE] LITTLE CHANDAN IS AN EXCEPTIONAL MANAGER....**
 
       #include<iostream>
       #include<map>
@@ -471,7 +471,7 @@
         return 0;
         }
 
-**H 14 [CPP LANGUAGE]**
+**H 14 [CPP LANGUAGE] KUNDAN BEING A GOOD FRIEND OF.....**
 
 
 **H 15 [CPP LANGUAGE]**
@@ -572,7 +572,7 @@
              }
         }
 
-**H 18 [CPP LANGUAGE]**
+**H 18 [CPP LANGUAGE] TORU PROPOSES HORI AGAIN THIS VALENTINE.....**
 
             #include <iostream>
             using namespace std;
@@ -634,7 +634,7 @@
 
             return 0;
             }
-   **H 19 [CPP LANGUAGE]** 
+   **H 19 [CPP LANGUAGE] THERE ARE TWO KIND OF BOTS IN THE GAME....** 
    
    **H 20 [CPP LANGUAGE]**
    
@@ -666,7 +666,7 @@
       }
       cout<<answer;
       }
-   **H 21 [C LANGUAGE]**
+   **H 21 [C LANGUAGE] XSQUARE GOT BORED PLAYING....**
    
       #include <stdio.h>
       #include <string.h>
@@ -792,7 +792,7 @@
           }
           return 0;
       }
-**H 23 [C LANGUAGE]**
+**H 23 [C LANGUAGE] AFTER GOVERNOR'S ATTACK ON PRISON, RICK......**
 
     #include <iostream>
     #include <algorithm>
