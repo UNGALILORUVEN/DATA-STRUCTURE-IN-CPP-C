@@ -92,7 +92,7 @@
                 return 0;
                 }
 
-**H 4 [CPP LANGUAGE]**
+**H 4 [CPP LANGUAGE] SHERLOCK HOLMES LOVES MIND PALACES!....**
 
         #include <iostream>
         #include <algorithm>
@@ -198,7 +198,7 @@
         }
         }
 
-**H 7 [CPP LANGUAGE]**
+**H 7 [CPP LANGUAGE] YOU HAVE BEEN GIVEN AN INTEGER.....**
 
 
 **H 8 [CPP LANGUAGE] ANDI AND BOB WERE FRIENDS SINCE CHILDHOOD.....**
@@ -300,7 +300,7 @@
           }
           return 0;
       }
-**H 10 [C LANGUAGE]**
+**H 10 [C LANGUAGE] AFTER GOVERNOR;S ATTACK ON PRISON.....**
 
             #include<stdio.h>
             #define gc getchar_unlocked
@@ -348,7 +348,7 @@
              return 0;
              }
 
-**H 11 [CPP LANGUAGE]**
+**H 11 [CPP LANGUAGE] LITTLE JHOOL IS STILL OUT OF MIND-......**
 
       #include <bits/stdc++.h>
       using namespace std;
@@ -477,7 +477,7 @@
 **H 15 [CPP LANGUAGE]**
 
 
-**H 16 [CPP LANGUAGE]**
+**H 16 [CPP LANGUAGE] THE MONK IS EXTEREMLY FOND OF PRATEEK THE.....**
 
       #include <iostream>
       #include <algorithm>
@@ -536,7 +536,7 @@
       cout<<" "<<answer;
       return 0;
       }
-**H 17 [CPP LANGUAGE]**
+**H 17 [CPP LANGUAGE] CHANDRU AND CHANDNI ARE PLAYING.....**
 
         #include<bits/stdc++.h>
         #define ll long long
@@ -636,7 +636,7 @@
             }
    **H 19 [CPP LANGUAGE] THERE ARE TWO KIND OF BOTS IN THE GAME....** 
    
-   **H 20 [CPP LANGUAGE]**
+   **H 20 [CPP LANGUAGE] EVERYONE KNOWS THAT SOME SPECIAL PIKACHUS.....**
    
         #include<bits/stdc++.h>
       using namespace std;
