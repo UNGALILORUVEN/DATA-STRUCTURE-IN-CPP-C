@@ -104,7 +104,7 @@
                 return 0;
             }
 
-**LL 3 [CPP LANGUAGE]**
+**LL 3 [CPP LANGUAGE] PROFEESOR SUDAN GIVES A TASK TO THE......**
 
       #include <stdio.h>
 
@@ -920,7 +920,7 @@
       start->link=t;
     }
  
-**LL 16 [CPP LANGUAGE] LONG AGO IN INDIA...**
+**LL 16 [CPP LANGUAGE] LONG AGO IN INDIA THERE WAS AN OLD...**
 
       #include<iostream>
       using namespace std;
