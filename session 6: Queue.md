@@ -406,7 +406,7 @@
     getJosephusPosition(m, n);
      return 0;
     }
-**Q 9 [CPP LANGUAGE]**
+**Q 9 [CPP LANGUAGE] A ENGLISH DEPT HOD IS TELLING A STORY......**
 
 
         #include <bits/stdc++.h>
@@ -551,7 +551,7 @@
     }
     return 0;
     }
-**Q 12 [CPP LANGUAGE]**
+**Q 12 [CPP LANGUAGE] RAMESH AND HIS WOFE LATA ARE FACING A CASH CRIS.....**
 
     #include <iostream>
     using namespace std;
