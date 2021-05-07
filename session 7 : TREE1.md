@@ -222,7 +222,7 @@
       cout<<ans[find(i)]-1<<" ";
         return 0;
       }
-**TR 3 [CPP LANGUAGE]**
+**TR 3 [CPP LANGUAGE] L IS HAVING A HARD TIME TEACHING THE 2ND STANDARD STUDENTS......**
 
 **TR 4 [CPP LANGUAGE] MADURAI IS A TOWN THAT STARTED....**
 
@@ -358,7 +358,7 @@
 
 **TR 7 [CPP LANGUAGE] MANIKANDAN LOVES  MATHS AND IS.....**
 
-**TR 8 [CPP LANGUAGE]**
+**TR 8 [CPP LANGUAGE] ZYX IS A FAMOUS INTERNATIONAL LEVEL LINGUISTICS AND...**
 
       #include <bits/stdc++.h>
       #define ll long long
@@ -433,7 +433,7 @@
     }
     return 0;
     }
-**TR 9 [CPP LANGUAGE]**
+**TR 9 [CPP LANGUAGE] SARAN LOVES BINARY SEQUENCES ONCE THE WAS PLAYING......**
 
       #include <bits/stdc++.h>
 
@@ -546,7 +546,7 @@
          cout<<"NO";
        return 0;
     }
-**TR 11 [CPP LANGUAGE]**
+**TR 11 [CPP LANGUAGE] TODAY KING TROPHIES IS ON ANOTHER RAMPAGE.....**
 
       #include <iostream>
     #include <vector>
@@ -796,7 +796,7 @@
     }
 **TR 18 [CPP LANGUAGE] IT'S APRIL FOOLS' DAY 2017.....**
 
-**TR 19 [CPP LANGUAGE]**
+**TR 19 [CPP LANGUAGE] IT'S APRIL FOOLS' DAY 2017 AND TO CELEBRATE.....**
 
 **TR 20 [CPP LANGUAGE] KING SULTAN JUST APPOINTED MORON AS....**
 
