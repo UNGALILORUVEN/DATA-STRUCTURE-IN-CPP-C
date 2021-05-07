@@ -418,7 +418,7 @@
       }
       return 0;
       }
- **H 13 [C LANGUAGE]**
+ **H 13 [C LANGUAGE] VOWELS ARE VERY ESSENTIAL CHARACTERS......**
 
         #include <stdio.h>
         #include <string.h>
