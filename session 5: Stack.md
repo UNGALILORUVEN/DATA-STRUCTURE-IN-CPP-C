@@ -430,7 +430,7 @@ THE DIRECTOR OF ENGINEERING COLLEGE DECIDED......
           printf("String is unbalanced!");
 
           }
-**ST 8 [C LANGUAGE]**
+**ST 8 [C LANGUAGE] AN OLD MAN PLANTED A TURNIP. THE TURNIP GREW AND GREW.....**
 
       #include <stdio.h>
     #include <string.h>
@@ -502,7 +502,7 @@ THE DIRECTOR OF ENGINEERING COLLEGE DECIDED......
     printf ("Value of %s is %d", exp, evaluatePostfix(exp));
     return 0;
     }
-**ST 9 [CPP LANGUAGE]**
+**ST 9 [CPP LANGUAGE] AN GOLD MAN PLOTTED A TURNIP. THE TURNIP......**
 
             #include<bits/stdc++.h>
             using namespace std;
@@ -1020,7 +1020,7 @@ THE DIRECTOR OF ENGINEERING COLLEGE DECIDED......
               }
           }
 
-**ST 15 [CPP LANGUAGE]**
+**ST 15 [CPP LANGUAGE] ONE DAY THE BOY BECAME SICK HIS.......**
 
       #include <iostream>
       using namespace std;
