@@ -446,6 +446,28 @@
     
 **SER11[CPP LANGUAGE] THE TASK FOR WRITING THE....**
 
+    #include "stdio.h"
+    int main()
+    {
+    int query, i, time, K, number;
+    long long int weight, temp, sum = 0;
+    scanf("%d", &query);
+    for (i = 0; i < query; i++)
+    {
+        scanf("%d%lld%d", &number, &weight, &time);
+        if (number == 1)
+        {
+            sum += weight;
+        }
+        if (number == 2)
+        {
+            printf("%lld\n", sum);
+            sum = 0;
+        }
+        number--;
+    }
+    return 0;
+    }
 **SER12[C LANGUAGE] THERE IS A CLASSROOM ....**
 
      #include <stdio.h>
