@@ -680,6 +680,127 @@ THE DIRECTOR OF ENGINEERING COLLEGE DECIDED......
     }
 **ST 12 [CPP LANGUAGE] LONG TIME AGO. PEOPLE WHO LIVED IN.....**
 
+           #include <iostream>
+
+          using namespace std;
+
+          int stack[100], top=-1, size;
+
+          void push(int &top,int n)
+
+          {
+
+           cout << "";
+
+          }
+
+          void push()
+
+          {
+
+            if(top==size-1)
+
+              cout<<"Stack Overflow"<<endl;
+
+            else
+
+            {
+
+              top++;
+
+              cin>>stack[top];
+
+            }
+
+          }
+
+          void pop()
+
+          {
+
+            if(top==-1)
+
+              cout<<"Stack underflow"<<endl;
+
+            else
+
+            {
+
+              cout<<"deleted element is"<<endl<<stack[top];
+
+              top--;
+
+            }
+
+          }
+
+          void print()
+
+          {
+
+            int i;
+
+            for(i=top;i>=0;i--)
+
+              cout<< " " <<stack[i]<<"";
+
+            cout<<endl;
+
+          }
+
+          int main()
+
+          {
+
+            char opt;
+
+            int o;
+
+            cin>>size;
+
+            do
+
+            {
+
+              cin>>o;
+
+              switch(o)
+
+              {
+
+                case 1:
+
+                  {
+
+                    push();
+
+                    break;
+
+                  }
+
+                case 2:
+
+                  {
+
+                    pop();
+
+                    break;
+
+                  }
+
+              }
+
+              cin>>opt;
+
+            }while(opt=='y');
+
+            print();
+
+            return 0;
+
+          }
+
+
 **ST 13 [C LANGUAGE] LONG TIME AGO. PEOPLE WHO LIVED......**
 
             #include<stdio.h>
