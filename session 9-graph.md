@@ -447,7 +447,7 @@
      return 0;
     }
 
-**GR 18 [C LANGUAGE] GIVEN A GRAPH AND A SOURCE.....**
+**GR 18 [CPP LANGUAGE] GIVEN A GRAPH AND A SOURCE.....**
 
 
       #include <limits.h>
