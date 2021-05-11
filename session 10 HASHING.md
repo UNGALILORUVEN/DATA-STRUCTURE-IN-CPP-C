@@ -157,7 +157,7 @@
         }
         return 0;
       }
-**H 6 [C LANGUAGE] BOB AND KHATU BOTH LOVE THE STRING....**
+**H 6 [CPP LANGUAGE] BOB AND KHATU BOTH LOVE THE STRING....**
 
         #include <iostream>
         #include<string.h>
